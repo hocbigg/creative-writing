@@ -1,8 +1,25 @@
-
+<div align="center" style="text-align: center">
+<img src="images/ossu-logo.webp" alt=""/>
+<h3>Hocbigg - Creative Writing</h3>
+<p>
+  Path to a free self-taught education in Creative Writing!
+</p>
+</div>
 
 # Summary
 
 This curriculum is a complete, MOOC-based **Creative Writing major** equivalent to a traditional 4-year undergraduate program (minus general education not specific to the discipline). It builds a rigorous foundation in narrative craft, poetics, literary analysis, writing process, revision, and the professional habits needed by working writers.
+
+The courses themselves are among the very best in the world, often coming from Harvard, Princeton, MIT, etc.
+
+**Courses must**:
+- Be open for enrollment
+- Run regularly (ideally in self-paced format, otherwise running multiple times per year)
+- Be of generally high quality in teaching materials and pedagogical principles
+
+When no course meets the above criteria, the coursework is supplemented with a book.
+When there are courses or books that don't fit into the curriculum but are otherwise of high quality,
+they belong in [extras/courses](extras/courses.md) or [extras/readings](extras/readings.md).
 
 
 ## Organization
@@ -12,45 +29,24 @@ This curriculum is a complete, MOOC-based **Creative Writing major** equivalent 
 * **Advanced Creative Writing**: Upper-division electives; students choose one concentration.
 * **Final Project**: A capstone manuscript (short story collection, novel opening, poetry chapbook, or essay collection).
 
-
-## Duration
-
-**1–2 years**, assuming **~20 hours/week**.
+**Duration**. **1–2 years**, assuming **~20 hours/week**.
 Faster students may finish in ~12–16 months; others may take ~24 months.
 
-
-# Skills Map
-
-**Theory**
-
-* Narrative theory (plot, character, point of view, time, perspective)
-* Poetics: sound, image, line, form, rhythm
-* Literary movements and historical context
-* Genre conventions and experimentation
-
-**Methods**
-
-* Close reading
-* Generative writing and drafting
-* Peer workshop and critique
-* Revision methodologies
-* Research for creative nonfiction
-
-**Tools**
-
-* Manuscript formatting
-* Story planning frameworks
-* Revision logs
-* Publishing tools (Submittable, Duotrope, etc.—optional)
-
-**Practice**
-
-* Weekly short exercises
-* Multi-draft workshop pieces
-* Long-form project development (novel chapters, essay series, or poetry sequence)
-
-
 # Curriculum
+
+- [Roadmap](#roadmap)
+- [Intro Creative Writing](#intro-creative-writing)
+   - [Intro Table](#intro-table)
+- [Core Creative Writing](#core-creative-writing)
+   - [Core Table](#core-table)
+- [Advanced Creative Writing](#advanced-creative-writing)
+   - [Fiction & Long-Form Narrative Track](#fiction--long-form-narrative-track)
+   - [Poetry & Hybrid Forms Track](#poetry--hybrid-forms-track)
+   - [Creative Nonfiction & Memoir Track](#creative-nonfiction--memoir-track)
+   - [Digital & Experimental Writing Track](#digital--experimental-writing-track)
+- [Final Project](#final-project)
+   - [Capstone Options](#capstone-options)
+   - [Structure](#structure)
 
 ## Roadmap
 
@@ -206,3 +202,14 @@ The capstone consolidates craft, theory, and revision skills. The student produc
 * 500–1,000-word craft reflection.
 * Optional: prepare a submission plan (journals, contests, digital platforms).
 
+
+## Congratulations
+
+After completing the requirements of the curriculum above,
+you will have completed the equivalent of a full bachelor's degree in Literary Theory.
+Congratulations!
+
+![keep learning](images/keep-learning.webp)
+
+# Code of conduct
+[Hocbigg's code of conduct](https://github.com/hocbigg/code-of-conduct).
