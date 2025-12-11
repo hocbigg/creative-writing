@@ -6,40 +6,68 @@
 </p>
 </div>
 
+# Contents
+
+- [Summary](#summary)
+- [Communities](#communities)
+- [Curriculum](#curriculum)
+- [Code of conduct](#code-of-conduct)
+
 # Summary
 
-This curriculum is a complete, MOOC-based **Creative Writing major** equivalent to a traditional 4-year undergraduate program (minus general education not specific to the discipline). It builds a rigorous foundation in narrative craft, poetics, literary analysis, writing process, revision, and the professional habits needed by working writers.
+This curriculum is a complete, MOOC-based **Creative Writing major** equivalent to a traditional 4-year undergraduate program (minus general education not specific to the discipline).
 
-The courses themselves are among the very best in the world, often coming from Harvard, Princeton, MIT, etc.
+It builds a rigorous foundation in narrative craft, poetics, literary analysis, writing process, revision, and the professional habits needed by working writers.
 
-**Courses must**:
-- Be open for enrollment
-- Run regularly (ideally in self-paced format, otherwise running multiple times per year)
-- Be of generally high quality in teaching materials and pedagogical principles
-
-When no course meets the above criteria, the coursework is supplemented with a book.
-When there are courses or books that don't fit into the curriculum but are otherwise of high quality,
-they belong in [extras/courses](extras/courses.md) or [extras/readings](extras/readings.md).
+Note: When there are courses or books that don't fit into the curriculum but are otherwise of high quality,
+they belong in [extras/courses](extras/courses.md), [extras/readings](extras/readings.md) or [extras/other_curricula](extras/other_curricula.md).
 
 
 ## Organization
 
-* **Intro Creative Writing**: Orientation, fundamentals, early craft, and testing long-form writing interest.
-* **Core Creative Writing**: The main curriculum — fiction, poetry, nonfiction, narrative theory, form, and literary analysis.
-* **Advanced Creative Writing**: Upper-division electives; students choose one concentration.
+* **Intro**: Orientation, fundamentals, early craft, and testing long-form writing interest.
+* **Core**: The main curriculum — fiction, poetry, nonfiction, narrative theory, form, and literary analysis.
+* **Advanced**: Upper-division electives; students choose one concentration.
 * **Final Project**: A capstone manuscript (short story collection, novel opening, poetry chapbook, or essay collection).
 
-**Duration**. **1–2 years**, assuming **~20 hours/week**.
-Faster students may finish in ~12–16 months; others may take ~24 months.
+**Duration**. 1–2 years, assuming ~20 hours/week.
+
+# Communities
+
+- Forums:
+  - [Scribophile](https://www.scribophile.com/)
+  - [Critique Circle](https://www.critiquecircle.com/)
+  - [Absolute Write Water Cooler](https://absolutewrite.com/forums/)
+  - [WritersCafe.org](https://www.writerscafe.org/)
+  - [WritingForums.com](https://www.writingforums.com/)
+- Subreddits:
+  - [r/writing](https://www.reddit.com/r/writing/)
+  - [r/WritingPrompts](https://www.reddit.com/r/WritingPrompts/)
+  - [r/DestructiveReaders](https://www.reddit.com/r/DestructiveReaders/)
+  - [r/KeepWriting](https://www.reddit.com/r/KeepWriting/)
+  - [r/fantasywriters](https://www.reddit.com/r/fantasywriters/)
+  - [r/scifiwriting](https://www.reddit.com/r/scifiwriting/)
+  - [r/Poetry](https://www.reddit.com/r/Poetry/)
+  - [r/Screenwriting](https://www.reddit.com/r/Screenwriting/)
+  - [r/FanFiction](https://www.reddit.com/r/FanFiction/)
+- Discord servers:
+  - [The Writing Hub (large & active)](https://discord.gg/writinghub)
+  - [Reedsy Writing Community](https://discord.gg/reedsy)
+  - [Shut Up & Write! (global sprints)](https://discord.gg/shutupandwrite)
+  - [NaNoWriMo Official Discord](https://discord.gg/nanowrimo)
+  - [Fantasy Writers Discord](https://discord.gg/fantasywriters)
+  - [Romance Writers Café](https://discord.gg/romancewriters)
+- Other / Event-based:
+  - [NaNoWriMo forums & camps](https://nanowrimo.org/)
+  - [Insecure Writer’s Support Group](https://www.insecurewriterssupportgroup.com/)
+- You can interact through [GitHub issues](https://github.com/hocbigg/creative-writing/issues). If there is a problem with a course, or a change needs to be made to the curriculum, this is the place to start the conversation. Read more [here](CONTRIBUTING.md).
+
 
 # Curriculum
 
-- [Roadmap](#roadmap)
-- [Intro Creative Writing](#intro-creative-writing)
-   - [Intro Table](#intro-table)
-- [Core Creative Writing](#core-creative-writing)
-   - [Core Table](#core-table)
-- [Advanced Creative Writing](#advanced-creative-writing)
+- [Intro](#intro)
+- [Core](#core)
+- [Advanced](#advanced)
    - [Fiction & Long-Form Narrative Track](#fiction--long-form-narrative-track)
    - [Poetry & Hybrid Forms Track](#poetry--hybrid-forms-track)
    - [Creative Nonfiction & Memoir Track](#creative-nonfiction--memoir-track)
@@ -48,69 +76,28 @@ Faster students may finish in ~12–16 months; others may take ~24 months.
    - [Capstone Options](#capstone-options)
    - [Structure](#structure)
 
-## Roadmap
-
-1. **English Foundations**
-   Basic grammar and clear writing habits come first. This includes introductory courses that strengthen sentence-level skills and reading comprehension.
-
-2. **Introductory Creative-Writing Craft**
-   Once the fundamentals are steady, you move into the first layer of creative-writing craft: plot, character, and basic story/poem construction.
-
-3. **Core Workshops and Theory**
-   After the intro craft courses, you’re prepared for deeper work:
-
-   * Fiction workshops
-   * Poetry workshops
-   * Creative nonfiction workshops
-   * Narrative theory and formal structure
-     These courses expand your understanding of how stories and poems actually work.
-
-4. **Literary Analysis Courses**
-   Alongside or after the core craft work, you take literature-analysis courses from Yale, Harvard, or similar sources. These teach how to read like a writer, interpreting technique and form at a high level.
-
-5. **Genre and Form Electives**
-   With both craft and analysis in place, you can move into thematic or genre-based courses (e.g., Poetry in America, Script Analysis). These deepen your sense of form, voice, and stylistic variation.
-
-6. **Advanced Specialization Track**
-   After the core and electives, you choose one advanced path:
-
-   * Fiction and long-form narrative
-   * Poetry and hybrid forms
-   * Creative nonfiction and memoir
-   * Digital and experimental writing
-     Each track assumes you completed the earlier core craft courses.
-
-7. **Capstone Manuscript**
-   The capstone sits at the end of the entire sequence. It depends on all previous stages: foundational writing, narrative craft, workshops, analysis, and specialized study. The capstone requires both technical proficiency and a mature writing process.
-
-## Intro Creative Writing
+## Intro
 
 These courses build essential writing habits, test whether the student enjoys sustained creative work, and introduce the core forms (fiction, poetry, nonfiction).
 
-### Intro Table
-
 | Courses | Duration | Effort | Prerequisites | Notes |
-| :------------------------------------------------------------------------------------------------------------------------------------------- | :------------: | :----------: | :-----------: | :-------------------------------------------- |
+| :---: | :---: | :---: | :---: | :---: |
 | [English for Journalists, Part 1 & 2 (UC Berkeley / edX)](https://www.edx.org/learn/english/uc-berkeley-english-for-journalists-part-1) | ~8 weeks total | 3–5 hrs/week | none | Strong grammar foundations; self-paced. |
 | [The Craft of Plot (Wesleyan / Coursera)](https://www.coursera.org/learn/craft-of-plot) | 1 week | 4–6 hrs | none | First in a reputable creative-writing series. |
 | [The Craft of Character (Wesleyan / Coursera)](https://www.coursera.org/learn/craft-of-character) | 1 week | 4–6 hrs | none | Fiction fundamentals. |
 | [Approaching Poetry (The Open University / OpenLearn)](https://www.open.edu/openlearn/history-the-arts/approaching-poetry/content-section-0) | 8 hours | self-paced | none | Poetry introduction. |
 | [Reading Literature: Fiction, Poetry, Drama (Harvard / HAA)](https://pll.harvard.edu/course/masterpieces-world-literature) | 6–12 weeks | 5–8 hrs/week | none | High-quality literary analysis. |
 
-**Textbook Supplement (if desired):**
+**Textbook Supplements:**
 
-* *Writing Fiction* by Janet Burroway (paid; gold-standard undergraduate fiction text)
-* Free alternative: *Writing Fiction: A Guide to Narrative Craft* (archived community college editions are sometimes open)
+* *Writing Fiction* by Janet Burroway
+* *Writing Fiction: A Guide to Narrative Craft*
 
+## Core
 
-## Core Creative Writing
-
-Equivalent to the first 2–3 years of a writing major.
-
-### Core Table
 
 | Courses | Duration | Effort | Prerequisites | Notes |
-| :------------------------------------------------------------------------------------------------------------------------------ | :---------: | :----------: | :---------------------------------: | :----------------------------------------- |
+| :---: | :---: | :---: | :---: | :---: |
 | [Modern & Contemporary American Poetry (UPenn / Coursera)](https://www.coursera.org/learn/modpo) | 10 weeks | 5–8 hrs/week | Intro Poetry | Legendary pedagogy; runs yearly. |
 | [Writing in the Sciences (Stanford / Coursera)](https://www.coursera.org/learn/sciwrite) | 8 weeks | 4–8 hrs/week | none | Strengthens clarity and revision. |
 | [The Art of Structure (Wesleyan / Coursera)](https://www.coursera.org/learn/craft-of-plot) | 4 weeks | 4–6 hrs/week | Craft courses | Focuses narrative architecture. |
@@ -120,11 +107,10 @@ Equivalent to the first 2–3 years of a writing major.
 | [Poetry in America: series (Harvard / edX)](https://www.edx.org/learn/arts-and-humanities/harvard-university-poetry-in-america) | Varies | 4–8 hrs/week | Intro poetry | High-quality thematic deep dives. |
 | [Script Analysis (NYU / edX)](https://www.edx.org/learn/theatre/nyu-script-analysis) | 6 weeks | 6–8 hrs/week | Recommended: character/plot courses | Expands understanding of dramatic writing. |
 
-**Textbook Supplements (no equivalent MOOC):**
-When a core topic lacks a MOOC, use these:
+**Textbook Supplements:**
 
 | Topic | Primary Textbook (Authoritative) | Free/Open Alternative |
-| :------------------------- | :------------------------------------------------------------------ | :----------------------------------------------------------------- |
+| :---: | :---: | :---: |
 | Poetics & Form | *Western Wind: An Introduction to Poetry* | *Poetry: A Pocket Anthology* (older free editions often available) |
 | Narrative Theory | *Narratology: Introduction to the Theory of Narrative* by Mieke Bal | *Narrative Theory* (open SUNY OER) |
 | Creative Nonfiction Theory | *Tell It Slant* by Brenda Miller | Assorted CNF open course packets (OpenCourseWare) |
@@ -137,7 +123,7 @@ Choose **one specialization**, though learners may take more.
 ### 1. Fiction & Long-Form Narrative Track
 
 | Courses | Duration | Effort | Prerequisites | Notes |
-| :------------------------------------------------------------------------------------------------------------------------------------------- | :------: | :--------: | :-----------: | :------------------------------- |
+| :---: | :---: | :---: | :---: | :---: |
 | [Writing for Young Readers (Commonwealth / edX)](https://www.edx.org/learn/education/commonwealth-education-trust-writing-for-young-readers) | 6 weeks | 3–4 hrs | core fiction | Strong narrative design. |
 | [Storytelling in the Workplace (Rochester / edX)](https://www.edx.org/learn/communication/university-of-rochester-storytelling) | 5 weeks | 4–6 hrs | none | Focus on clarity & persuasion. |
 | [MIT OCW: Writing and Experience](https://ocw.mit.edu/courses/21w-755-writing-and-experience-fall-2013/) | 12 weeks | self-paced | core writing | Free-form fiction/creative work. |
@@ -146,7 +132,7 @@ Choose **one specialization**, though learners may take more.
 ### 2. Poetry & Hybrid Forms Track
 
 | Courses | Duration | Effort | Prerequisites | Notes |
-| :------------------------------------------------------------------------------------------------------------------------------ | :------: | :--------: | :-----------: | :------------------------------ |
+| :---: | :---: | :---: | :---: | :---: |
 | [Poetry: Rhythm & Meter (OpenLearn)](https://www.open.edu/openlearn/history-the-arts/poetry-rhythm-and-metre/content-section-0) | ~4 hrs | self-paced | modpo | Form & scansion. |
 | [MIT OCW: Writing and Reading Poems](https://ocw.mit.edu/courses/21w-756-writing-and-reading-poems-spring-2014/) | 12 weeks | self-paced | core poetry | University workshop equivalent. |
 | [Digital Poetry (University of Adelaide / edX)](https://www.edx.org/course/digital-poetry) | 6 weeks | 3–4 hrs/wk | none | For hybrid/experimental poets. |
@@ -154,7 +140,7 @@ Choose **one specialization**, though learners may take more.
 ### 3. Creative Nonfiction & Memoir Track
 
 | Courses | Duration | Effort | Prerequisites | Notes |
-| :------------------------------------------------------------------------------------------------------------------------------------------------ | :------: | :----------: | :-----------: | :-------------------------------- |
+| :---: | :---: | :---: | :---: | :---: |
 | [MIT OCW: Writing and Reading the Essay](https://ocw.mit.edu/courses/21w-755-writing-and-reading-the-essay-fall-2006/) | 12 weeks | self-paced | CNF basics | Classic essay craft. |
 | [Harvard: Rhetoric: The Art of Persuasive Writing](https://pll.harvard.edu/course/rhetoric-art-persuasion) | 8 weeks | 2–3 hrs/week | none | Tightens prose clarity. |
 | [Writing in the Digital Age (OpenLearn)](https://www.open.edu/openlearn/history-the-arts/creative-writing-and-critical-reading/content-section-0) | 8 hrs | none | none | Understanding contemporary forms. |
@@ -162,54 +148,20 @@ Choose **one specialization**, though learners may take more.
 ### 4. Digital & Experimental Writing Track
 
 | Courses | Duration | Effort | Prerequisites | Notes |
-| :-------------------------------------------------------------------------------------------------------------------------------------- | :-------: | :----------: | :-----------: | :----------------------------- |
+| :---: | :---: | :---: | :---: | :---: |
 | [Humanities + Tech (HarvardX)](https://pll.harvard.edu/course/ancient-masterpieces-digital-age) | 6–8 weeks | 4–6 hrs/week | none | Understanding digital media. |
 | [Interactive Fiction (MIT OCW)](https://ocw.mit.edu/courses/cms-609-the-word-and-the-world-creative-writing-for-video-games-fall-2014/) | 12 weeks | self-paced | none | Game-writing focus. |
 | [Digital Poetry (Adelaide / edX)](https://www.edx.org/course/digital-poetry) | 6 weeks | 3–4 hrs | none | Repeated above, relevant here. |
 
 
 ## Final Project
-
-The capstone consolidates craft, theory, and revision skills. The student produces a **substantial creative manuscript** ready for peer review or submission.
-
-### Capstone Options
-
-* **Fiction**: a polished 8,000–20,000-word story collection or first 1–3 novel chapters
-* **Poetry**: a 20–30 poem chapbook
-* **Creative Nonfiction**: a portfolio of 3–5 revised essays (~6,000–12,000 words)
-* **Digital/Experimental**: an interactive narrative or multimedia poetry project
-
-### Structure
-
-**Stage 1: Proposal (2–3 weeks)**
-
-* Define genre, scope, research needs.
-* Produce an annotated inspiration list.
-
-**Stage 2: drafting (8–12 weeks)**
-
-* Weekly generative output targets.
-* Midpoint feedback (peer groups, online communities).
-
-**Stage 3: Revision (6–8 weeks)**
-
-* Apply structural, line-level, and thematic revision passes.
-* Compile a revision log documenting changes.
-
-**Stage 4: Final Manuscript**
-
-* Proper formatting (MLA/standard manuscript).
-* 500–1,000-word craft reflection.
-* Optional: prepare a submission plan (journals, contests, digital platforms).
-
+...
 
 ## Congratulations
 
 After completing the requirements of the curriculum above,
 you will have completed the equivalent of a full bachelor's degree in Literary Theory.
 Congratulations!
-
-![keep learning](images/keep-learning.webp)
 
 # Code of conduct
 [Hocbigg's code of conduct](https://github.com/hocbigg/code-of-conduct).
