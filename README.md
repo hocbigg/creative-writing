@@ -1,5 +1,5 @@
 <div align="center" style="text-align: center">
-<img src="images/ossu-logo.webp" alt=""/>
+<img src="/images/logo.png" alt=""/>
 <h3>Hocbigg - Creative Writing</h3>
 <p>
   Path to a free self-taught education in Creative Writing!
