@@ -8,7 +8,7 @@ Once you have made it through most of the curriculum, knowing whether a book is 
 Or, if you are struggling in one of the courses, perhaps reading a book on the subject will help.
 
 | Name | Author(s) |
-| :------------------------------------------------------------------ | :---------------------------- |
+| :---: | :---: |
 | _The Writing Life_ | Annie Dillard |
 | _Bird by Bird_ | Anne Lamott |
 | _Steering the Craft_ | Ursula K. Le Guin |

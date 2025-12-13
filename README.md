@@ -3,6 +3,11 @@
 <h3>Hocbigg - Creative Writing</h3>
 <p>
   Path to a free self-taught education in Creative Writing!
+<p>
+  <a href="https://github.com/hocbigg/creative-writing">
+    <img alt="Hocbigg" src="/images/view_on_github.svg"
+  ></a>
+</p>
 </p>
 </div>
 
@@ -50,19 +55,18 @@ they belong in [extras/courses](extras/courses.md), [extras/readings](extras/rea
 - Other / Event-based:
   - [NaNoWriMo forums & camps](https://nanowrimo.org/)
   - [Insecure Writer’s Support Group](https://www.insecurewriterssupportgroup.com/)
-- You can interact through [GitHub issues](https://github.com/hocbigg/creative-writing/issues). If there is a problem with a course, or a change needs to be made to the curriculum, this is the place to start the conversation. Read more [here](CONTRIBUTING.md).
+- You can interact through [GitHub issues](https://github.com/hocbigg/creative-writing/issues). If there is a problem with a course, or a change needs to be made to the curriculum, this is the place to start the conversation. Read more [here](/CONTRIBUTING.html).
 
 
 # Curriculum
 
 | Subject | Why study? | Book | Videos |
 | --- | --- | --- | --- |
-| Introduction to Creative Writing | Builds foundational skills in imagination, expression, and exploring various genres. | *On Writing: A Memoir of the Craft* by Stephen King | [Start Writing Fiction](https://www.open.edu/openlearn/history-the-arts/creative-writing/start-writing-fiction/content-section-0) |
-| Fiction Writing | Develops techniques for crafting compelling narratives, characters, and plots. | *The Anatomy of Story: 22 Steps to Becoming a Master Storyteller* by John Truby | [Creative Writing: The Craft of Plot](https://www.coursera.org/learn/craft-of-plot) OR [Writing and Reading Short Stories](https://ocw.mit.edu/courses/21w-755-writing-and-reading-short-stories-spring-2012/)<br>AND [Brandon Sanderson's Writing Lecture (Writing Science Fiction & Fantasy)](https://www.youtube.com/playlist?list=PLSH_xM-KC3ZvzkfVo_Dls0B5GiE2oMcLY) |
-| Poetry Writing | Enhances mastery of language, rhythm, imagery, and concise emotional expression. | *A Poetry Handbook* by Mary Oliver | [Sharpened Visions: A Poetry Workshop](https://www.coursera.org/learn/poetry-workshop) OR [Writing and Reading Poems (MIT OCW)](https://ocw.mit.edu/courses/21w-756-writing-and-reading-poems-fall-2006/) |
-| Creative Nonfiction | Teaches blending factual accuracy with narrative flair for memoirs and essays. | *On Writing Well: The Classic Guide to Writing Nonfiction* by William Zinsser | [Writing and Experience: Reading and Writing Autobiography](https://ocw.mit.edu/courses/21w-022-03-writing-and-experience-reading-and-writing-autobiography-spring-2014/) |
-| Revision and Editing | Refines drafts, improves clarity, and polishes work for professional quality. | *Self-Editing for Fiction Writers: How to Edit Yourself Into Print* by Renni Browne and Dave King | [Good with Words: Writing and Editing Specialization](https://www.coursera.org/specializations/good-with-words) |
-
+| Introduction to Creative Writing | Builds foundational skills in imagination, expression, and exploring various genres. | [*On Writing: A Memoir of the Craft* by Stephen King](https://archive.org/details/onwritingmemoiro0000king) | [Start Writing Fiction](https://www.open.edu/openlearn/history-the-arts/creative-writing/start-writing-fiction/content-section-0) |
+| Fiction Writing | Develops techniques for crafting compelling narratives, characters, and plots. | [*The Anatomy of Story: 22 Steps to Becoming a Master Storyteller* by John Truby](https://archive.org/details/anatomyofstory220000trub) | [Creative Writing: The Craft of Plot](https://www.coursera.org/learn/craft-of-plot) OR [Writing and Reading Short Stories](https://ocw.mit.edu/courses/21w-755-writing-and-reading-short-stories-spring-2012/)<br>AND [Brandon Sanderson's Writing Lecture (Writing Science Fiction & Fantasy)](https://www.youtube.com/playlist?list=PLSH_xM-KC3ZvzkfVo_Dls0B5GiE2oMcLY) |
+| Poetry Writing | Enhances mastery of language, rhythm, imagery, and concise emotional expression. | [*A Poetry Handbook* by Mary Oliver](https://archive.org/details/poetryhandbook00oliv) | [Sharpened Visions: A Poetry Workshop](https://www.coursera.org/learn/poetry-workshop) OR [Writing and Reading Poems (MIT OCW)](https://ocw.mit.edu/courses/21w-756-writing-and-reading-poems-fall-2006/) |
+| Creative Nonfiction | Teaches blending factual accuracy with narrative flair for memoirs and essays. | [*On Writing Well: The Classic Guide to Writing Nonfiction* by William Zinsser](https://archive.org/details/onwritingwellcla00zins_4) | [Writing and Experience: Reading and Writing Autobiography](https://ocw.mit.edu/courses/21w-022-03-writing-and-experience-reading-and-writing-autobiography-spring-2014/) |
+| Revision and Editing | Refines drafts, improves clarity, and polishes work for professional quality. | [*Self-Editing for Fiction Writers: How to Edit Yourself Into Print* by Renni Browne and Dave King](https://archive.org/details/selfeditingforfi0000brow_y0x1) | [Good with Words: Writing and Editing Specialization](https://www.coursera.org/specializations/good-with-words) |
 
 # Code of conduct
 [Hocbigg's code of conduct](https://github.com/hocbigg/code-of-conduct).
