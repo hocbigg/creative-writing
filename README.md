@@ -3,11 +3,6 @@
 <h3>Hocbigg - Creative Writing</h3>
 <p>
   Path to a free self-taught education in Creative Writing!
-<p>
-  <a href="https://github.com/hocbigg/creative-writing">
-    <img alt="Hocbigg" src="/images/view_on_github.svg"
-  ></a>
-</p>
 </p>
 </div>
 
@@ -20,12 +15,12 @@
 
 # Summary
 
-This curriculum is a complete, MOOC-based **Creative Writing major** equivalent to a traditional 4-year undergraduate program (minus general education not specific to the discipline).
+This curriculum is a complete, MOOC-based Creative Writing major equivalent to a traditional 4-year undergraduate program (minus general education not specific to the discipline).
 
 It builds a rigorous foundation in narrative craft, poetics, literary analysis, writing process, revision, and the professional habits needed by working writers.
 
 Note: When there are courses or books that don't fit into the curriculum but are otherwise of high quality,
-they belong in [extras/courses](extras/courses.md), [extras/readings](extras/readings.md) or [extras/other_curricula](extras/other_curricula.md).
+they belong in [extras/courses](extras/courses.md), [extras/readings](extras/readings.md).
 
 # Communities
 
@@ -53,9 +48,11 @@ they belong in [extras/courses](extras/courses.md), [extras/readings](extras/rea
   - [Fantasy Writers Discord](https://discord.gg/fantasywriters)
   - [Romance Writers Café](https://discord.gg/romancewriters)
 - Other / Event-based:
-  - [NaNoWriMo forums & camps](https://nanowrimo.org/)
   - [Insecure Writer’s Support Group](https://www.insecurewriterssupportgroup.com/)
 - You can interact through [GitHub issues](https://github.com/hocbigg/creative-writing/issues). If there is a problem with a course, or a change needs to be made to the curriculum, this is the place to start the conversation. Read more [here](/CONTRIBUTING.html).
+- Join our Discord server (for discussions around this and other curricula): 
+    
+    [![discord link](/assets/discord.png)](https://discord.gg/KHqAv4Nvm5)
 
 
 # Curriculum
@@ -84,16 +81,16 @@ This phase covers the essential subjects in creative writing, equivalent to the 
 | Screenwriting | Examines visual storytelling, formatting, and scene construction for film/TV, teaching adaptation of narrative for multimedia formats. | [*Story: Substance, Structure, Style, and the Principles of Screenwriting*](https://www.amazon.com/Story-Substance-Structure-Principles-Screenwriting/dp/0060391685) | [An Introduction to Screenwriting](https://www.futurelearn.com/courses/screenwriting) |
 | Editing and Revision | Develops self-editing skills for clarity, concision, and impact, essential for polishing work and preparing for publication or feedback. | [*Self-Editing for Fiction Writers*](https://www.amazon.com/Self-Editing-Fiction-Writers-Second-Yourself/dp/0060545690) | [Comprehensive Guide to Creative Writing](https://alison.com/course/a-comprehensive-guide-to-creative-writing) |
 
-**Note**: Start with Fiction and Poetry concurrently if possible, as they build foundational craft. Literary Theory should follow initial genre exposure. Playwriting and Screenwriting require prior narrative skills from Fiction/Nonfiction. Editing can be studied alongside or after genres for immediate application.
+Note: Start with Fiction and Poetry concurrently if possible, as they build foundational craft. Literary Theory should follow initial genre exposure. Playwriting and Screenwriting require prior narrative skills from Fiction/Nonfiction. Editing can be studied alongside or after genres for immediate application.
 
 ## Advanced CW
 
 This phase offers elective subjects and specialization tracks for deeper focus. Learners select one primary track (e.g., Fiction) but may choose 1–2 electives from other areas. Electives build on Core skills, allowing customization while maintaining balance.
 
-- **Fiction**: Emphasizes long-form narrative, genre experimentation, and publishing prep. Required: Advanced Fiction Writing, Genre Studies. Elective: Literary Translation.
-- **Poetry**: Focuses on forms, experimentation, and performance. Required: Advanced Poetry Writing, Poetic Forms and Traditions. Elective: Literary Translation.
-- **Screenwriting**: Targets film/TV production elements. Required: Advanced Screenwriting, Adaptation Techniques. Elective: Genre Studies.
-- **Literary Translation**: For multilingual writers, stressing cross-cultural adaptation. Required: Literary Translation, Advanced Nonfiction Writing. Elective: Poetic Forms and Traditions.
+- Fiction: Emphasizes long-form narrative, genre experimentation, and publishing prep. Required: Advanced Fiction Writing, Genre Studies. Elective: Literary Translation.
+- Poetry: Focuses on forms, experimentation, and performance. Required: Advanced Poetry Writing, Poetic Forms and Traditions. Elective: Literary Translation.
+- Screenwriting: Targets film/TV production elements. Required: Advanced Screenwriting, Adaptation Techniques. Elective: Genre Studies.
+- Literary Translation: For multilingual writers, stressing cross-cultural adaptation. Required: Literary Translation, Advanced Nonfiction Writing. Elective: Poetic Forms and Traditions.
 
 | Subject | Why study? | Book | Online Course |
 | --- | --- | --- | --- |
@@ -114,7 +111,7 @@ This culminating phase synthesizes all prior learning through a major independen
 | --- | --- | --- | --- |
 | Capstone Project Development | Guides the creation of a substantial work (e.g., novel draft, poetry collection, screenplay) with emphasis on planning, execution, and synthesis of skills. | [*The War of Art: Break Through the Blocks and Win Your Inner Creative Battles*](https://archive.org/details/warofartbreakthr0000pres) |  |
 
-**Project Options** (aligned with tracks):
+Project Options (aligned with tracks):
 
 - Fiction: 50–100 page novel excerpt or short story collection.
 - Poetry: 20–30 poem chapbook.
