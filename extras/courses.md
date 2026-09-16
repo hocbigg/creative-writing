@@ -1,57 +1,39 @@
-# Extra Courses
+# Great Courses
 
-This is a list of high-quality courses that, for one reason or another, didn't make it into the curriculum (irregular scheduling, overlap with a stronger core course, narrowly specialized focus, or excellent but not essential).
+A curated directory of standout university OpenCourseWare lectures, landmark MOOCs, and comprehensive audiovisual deep-dives in Creative Writing and literary craft. These courses move beyond introductory writing tutorials to offer rigorous craft analysis, masterclasses in narrative architecture, and deep historical and formal context.
 
-## Fiction & Narrative Craft
+## Fiction & Narrative Architecture
 
-| Courses | Duration | Effort |
-| :-- | :--: | :--: |
-| [MIT OCW – Writing Science Fiction & Fantasy](https://ocw.mit.edu/courses/21w-759-writing-science-fiction-and-fantasy-spring-2013/) | 12 weeks | self-paced |
-| [University of British Columbia – How to Write a Novel (edX)](https://www.edx.org/learn/communication/the-university-of-british-columbia-how-to-write-a-novel) | 10 weeks | 5–8 hrs/week |
-| [University of British Columbia – Novel Writing: The First Draft (edX)](https://www.edx.org/learn/arts-and-humanities/ubc-creative-writing-novel-writing) | 12 weeks | 5–8 hrs/week |
-| [FutureLearn – Start Writing Fiction (Open University)](https://www.futurelearn.com/courses/start-writing-fiction) | 8 weeks | 3 hrs/week |
-| [Harvard – Ancient Masterpieces of World Literature](https://pll.harvard.edu/course/ancient-masterpieces-world-literature) | 6 weeks | 4–7 hrs/week |
+- [Creative Writing: The Craft of Plot (Coursera / Wesleyan University / Brando Skyhorse)](https://www.coursera.org/learn/craft-of-plot)
+- [Creative Writing: The Craft of Character (Coursera / Wesleyan University / Amy Bloom)](https://www.coursera.org/learn/craft-of-character)
+- [Creative Writing: The Craft of Setting and Description (Coursera / Wesleyan University / Amity Gaige)](https://www.coursera.org/learn/craft-of-setting)
+- [Start Writing Fiction (OpenLearn / The Open University)](https://www.open.edu/openlearn/history-the-arts/creative-writing/start-writing-fiction/content-section-0)
 
-## Poetry & Poetics
+## Poetry & Modern Poetics
 
-| Courses | Duration | Effort |
-| :-- | :--: | :--: |
-| [MIT OCW – Reading Poetry](https://ocw.mit.edu/courses/21l-004-reading-poetry-fall-2005/) | 12 weeks | self-paced |
-| [University of Pennsylvania – Poetry and Painting](https://www.coursera.org/learn/poetry-painting) | 4 weeks | 2–4 hrs/week |
-| [Open University – What is Poetry?](https://www.open.edu/openlearn/history-the-arts/what-poetry/content-section-0) | – | ~8 hours |
-| [Harvard – Emily Dickinson (Poetry in America series)](https://www.edx.org/learn/arts-and-humanities/harvard-university-poetry-in-america-the-civil-war) | 4–8 weeks | 4–6 hrs/week |
+- [Modern & Contemporary American Poetry - ModPo (Coursera / University of Pennsylvania / Al Filreis)](https://www.coursera.org/learn/modpo)
+- [Sharpened Visions: A Poetry Workshop (Coursera / California Institute of the Arts / Douglas Kearney)](https://www.coursera.org/learn/poetry-workshop)
+- [ENGL 310: Modern Poetry (Open Yale Courses / Langdon Hammer)](https://oyc.yale.edu/english/engl-310)
+- Poetry in America: The City That Is Shipwrecked and Emily Dickinson (edX / Harvard University / Elisa New)
 
-## Creative Nonfiction, Essay, Journalism
+## Dramatic Writing, Stage & Screen
 
-| Courses | Duration | Effort |
-| :-- | :--: | :--: |
-| [Harvard – Journalism for a Better Democracy](https://pll.harvard.edu/course/journalism-better-democracy) | 7 weeks | 2–4 hrs/week |
-| [University of Michigan – Writing and Editing: Revising](https://www.coursera.org/learn/writing-editing-revising) | 4 weeks | 4–6 hrs/week |
-| [UC BerkeleyX – English for Journalists: Values, Ethics, and Legal Issues](https://www.edx.org/learn/english/uc-berkeley-english-for-journalists-values-ethics-and-legal-issues) | 5 weeks | 3–5 hrs/week |
-| [MIT OCW – Writing and Reading Short Stories (alternate semester)](https://ocw.mit.edu/courses/21w-755-writing-and-reading-short-stories-fall-2012/) | 12 weeks | self-paced |
+- Script Writing: Write a Feature-Length Screenplay for Film or Television (Coursera / Michigan State University / David Wheeler)
+- Screenwriting: Writing a Feature Film Script (edX / University of California, Irvine)
+- Dialogue and Dramatic Action Masterclass (StudioBinder Series)
+- The Tools of Screenwriting Workshop Series (American Film Institute)
 
-## Playwriting, Screenwriting & Dramatic Forms
+## Literary Analysis & Craft-Based Reading
 
-| Courses | Duration | Effort |
-| :-- | :--: | :--: |
-| [FutureLearn – An Introduction to Screenwriting](https://www.futurelearn.com/courses/screenwriting) | 2–3 weeks | 3 hrs/week |
-| [edX – Screenwriting: Writing a Feature Film Script](https://www.edx.org/learn/film/uci-screenwriting-writing-a-feature-film-script) | 6 weeks | 6–7 hrs/week |
-| [FutureLearn – How to Read a Play](https://www.futurelearn.com/courses/how-to-read-a-play) | 3 weeks | 3 hrs/week |
+- [ENGL 291: The American Novel Since 1945 (Open Yale Courses / Amy Hungerford)](https://oyc.yale.edu/english/engl-291)
+- [ENGL 300: Introduction to Theory of Literature (Open Yale Courses / Paul Fry)](https://oyc.yale.edu/english/engl-300)
+- [ENGL 220: Milton (Open Yale Courses / John Rogers)](https://oyc.yale.edu/english/engl-220)
+- [Creative Writing and Critical Reading (OpenLearn / The Open University)](https://www.open.edu/openlearn/history-the-arts/creative-writing/creative-writing-and-critical-reading/content-section-0)
+- [Writing What You Know: Personal Experience and Creative Nonfiction (OpenLearn / The Open University)](https://www.open.edu/openlearn/history-the-arts/creative-writing/writing-what-you-know/content-section-0)
 
-## Digital, Interactive, and Experimental Writing
+## Specialized, Digital & Professional Practice
 
-| Courses | Duration | Effort |
-| :-- | :--: | :--: |
-| [University of Adelaide – Creativity & AI (edX)](https://www.edx.org/learn/arts-and-humanities/university-of-adelaide-creativity-and-ai) | 7 weeks | 2–4 hrs/week |
-| [Harvard – Ancient Masterpieces in the Digital Age](https://pll.harvard.edu/course/ancient-masterpieces-digital-age) | 6 weeks | 4–6 hrs/week |
-| [Unity / Coursera – Narrative Design for Games](https://www.coursera.org/learn/narrative-design) | 4 weeks | 4–6 hrs/week |
-
-## Other curricula
-
-This curriculum is one of a few efforts to inform learners how they can pursue Creative Writing independently. Below are a few other such efforts.
-
-- [University of British Columbia – Creative Writing BFA Requirements](https://creativewriting.ubc.ca/undergraduate/)
-- [Stanford Creative Writing Track (English Major)](https://creativewriting.stanford.edu/academics)
-- [MIT Comparative Media Studies / Writing OCW Track](https://ocw.mit.edu/courses/find-by-topic/#cat=humanities&subcat=writing)
-- [Open University – Creative Writing Course Collections](https://www.open.edu/openlearn/history-the-arts/free-courses)
-- [Gotham Writers Workshop – Writing Guides](https://www.writingclasses.com/tools)
+- [Creative Writing: The Craft of Style (Coursera / Wesleyan University / Salvatore Scibona)](https://www.coursera.org/learn/craft-of-style)
+- [Good with Words: Writing and Editing Specialization (Coursera / University of Michigan / Patrick Barry)](https://www.coursera.org/specializations/good-with-words)
+- [Comparative Media Studies and Writing OpenCourseWare Curriculum (MIT OCW)](https://ocw.mit.edu/courses/comparative-media-studies-writing/)
+- Narrative Design and Interactive Storytelling with Twine (Digital Games Research Association / Open Materials)
