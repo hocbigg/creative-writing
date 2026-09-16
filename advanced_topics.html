@@ -1,109 +1,353 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="color-scheme" content="light dark">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
 
-<title>Advanced Topics</title>
-<link rel="stylesheet" href="/creative-writing/style.css">
-<meta name="description" content="">
+  <title>Advanced Topics</title>
+  <meta name="description" content="A lightweight static page by hocbigg.">
+  <meta name="author" content="hocbigg">
 
-<link rel="canonical" href="https://hocbigg.github.io/creative-writing/">
+  <link rel="canonical" href="https://hocbigg.github.io/creative-writing/advanced_topics.html">
+  <meta property="og:title" content="Advanced Topics">
+  <meta property="og:description" content="A lightweight static page by hocbigg.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hocbigg.github.io/creative-writing/advanced_topics.html">
+  <link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
 
-<meta property="og:title" content="Advanced Topics">
-<meta property="og:description" content="">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://hocbigg.github.io/creative-writing/">
-<meta name="author" content="hocbigg">
-<link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
+  <style>
+:root {
+  color-scheme: light dark;
+
+  --bg: #ffffff;
+  --fg: #1a1a1a;
+  --muted: #595959;
+  --border: #e0e0e0;
+  --th-bg: #f6f8fa;
+  --code-bg: #f4f4f4;
+  --link: #0969da;
+  --focus-ring: #0969da;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1117;
+    --fg: #e6edf3;
+    --muted: #8b949e;
+    --border: #30363d;
+    --th-bg: #161b22;
+    --code-bg: #161b22;
+    --link: #58a6ff;
+    --focus-ring: #58a6ff;
+  }
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 1.5rem auto;
+  max-width: 60rem;
+  padding: 0 1rem 3.5rem;
+  background-color: var(--bg);
+  color: var(--fg);
+  font: 1.15rem/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  
+  /* Cú pháp hiện đại thay thế cho word-wrap */
+  overflow-wrap: break-word;
+}
+
+.site-header {
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1rem;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 0.5rem 1.25rem;
+  font-size: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+nav a:hover, 
+nav a:focus-visible {
+  color: var(--fg);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+nav .nav-brand {
+  color: var(--fg);
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+
+.skip-link {
+  position: absolute;
+  transform: translateY(-150%);
+  left: 1rem;
+  background: var(--fg);
+  color: var(--bg);
+  padding: 0.5rem 1rem;
+  z-index: 100;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: transform 0.2s ease;
+}
+
+.skip-link:focus {
+  transform: translateY(1rem);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.3;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--fg);
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 2rem;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--border);
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1.15rem;
+}
+
+h6 {
+  font-size: 1rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+p, ul, ol, blockquote, table {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+}
+
+li > ul,
+li > ol {
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+}
+
+li {
+  margin-bottom: 0.25rem;
+}
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+a:has(img) {
+  text-decoration: none;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page-header img {
+  margin: 0 auto 1rem;
+  display: block;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.875em;
+  background-color: var(--code-bg);
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+}
+
+pre {
+  background-color: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1rem;
+  overflow-x: auto;
+  tab-size: 2;
+}
+
+pre code {
+  background: transparent;
+  padding: 0;
+  border: none;
+  font-size: 0.9rem;
+  border-radius: 0;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th, td {
+  border: 1px solid var(--border);
+  padding: 0.6rem 0.75rem;
+  vertical-align: top;
+}
+
+th {
+  background-color: var(--th-bg);
+  font-weight: 600;
+}
+
+blockquote {
+  margin-inline: 0;
+  border-left: 4px solid var(--border);
+  padding-left: 1rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media print {
+  body {
+    max-width: none;
+    color: #000;
+    background: #fff;
+  }
+  .skip-link, nav {
+    display: none;
+  }
+}
+  </style>
 </head>
-
 <body>
 
-<nav>
-<a href="/">Hocbigg</a>
-<a href="/creative-writing/">Creative-Writing</a>
-<a href="/creative-writing/advanced_topics.html">Advanced Topics</a>
-<a href="/creative-writing/projects.html">Projects</a>
-<a href="/creative-writing/extras/courses.html">Extra Courses</a>
-<a href="/creative-writing/extras/readings.html">Extra Reading</a>
-<a href="https://github.com/hocbigg/creative-writing/" target="_blank">View on Github</a>
-</nav>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-<main>
-<article>
+  <header class="site-header">
+    <nav aria-label="Main Navigation">
+    <ul>
+      <li><a href="https://hocbigg.github.io/" class="nav-brand">Hocbigg</a></li>
+      <li><a href="/creative-writing/">Creative Writing</a></li>
+      <li><a href="/creative-writing/advanced_topics.html">Advanced Topics</a></li>
+      <li><a href="/creative-writing/projects.html">Projects</a></li>
+      <li><a href="/creative-writing/extras/readings.html">Extra Readings</a></li>
+      <li><a href="/creative-writing/extras/courses.html">Extra Courses</a></li>
+      <li><a href="https://github.com/hocbigg/creative-writing" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> (opens in new tab)</span></a></li>
+    </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <article>
 
 <h1 id="advanced-topics">Advanced Topics</h1>
-<p>This phase offers elective subjects and specialization tracks for deeper focus. Learners select one primary track (e.g., Fiction) but may choose 1–2 electives from other areas. Electives build on Core skills, allowing customization while maintaining balance.</p>
+<p>This page branches out from the Core Creative Writing curriculum into five specialization tracks. These are electives, not a checklist: pick the one or two tracks that match what you actually want to write, rather than working through all of them.</p>
 <ul>
-<li>Fiction: Emphasizes long-form narrative, genre experimentation, and publishing prep. Required: Advanced Fiction Writing, Genre Studies. Elective: Literary Translation.</li>
-<li>Poetry: Focuses on forms, experimentation, and performance. Required: Advanced Poetry Writing, Poetic Forms and Traditions. Elective: Literary Translation.</li>
-<li>Screenwriting: Targets film/TV production elements. Required: Advanced Screenwriting, Adaptation Techniques. Elective: Genre Studies.</li>
-<li>Literary Translation: For multilingual writers, stressing cross-cultural adaptation. Required: Literary Translation, Advanced Nonfiction Writing. Elective: Poetic Forms and Traditions.</li>
+<li><strong>Fiction: The Novel and Genre Craft</strong> — long-form narrative structure, genre-fiction technique, and advanced prose style for writers moving from short exercises into novels.</li>
+<li><strong>Poetry: Advanced Form and Experimentation</strong> — historical and global poetic forms, modern and experimental poetics, and advanced craft essays on voice and process.</li>
+<li><strong>Screenwriting &amp; Dramatic Writing</strong> — screenplay structure, television series writing, and adapting existing work for film and TV.</li>
+<li><strong>Literary Nonfiction &amp; Narrative Journalism</strong> — long-form true-story craft, the personal essay at an advanced level, and the ethics of fact in creative nonfiction.</li>
+<li><strong>Literary Translation</strong> — the craft and theory of carrying literary work, prose and poetry, across languages.</li>
 </ul>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Why study?</th>
-<th>Book</th>
-<th>Online Course</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Advanced Fiction Writing</td>
-<td>Deepens mastery of novel/short story forms, focusing on voice, theme, and revision for publication-ready work.</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.amazon.com/Writing-Fiction-Guide-Narrative-Craft/dp/022661669X"><em>Writing Fiction: A Guide to Narrative Craft</em></a></td>
-<td>Covered in <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/playlist?list=PLSH_xM-KC3ZvzkfVo_Dls0B5GiE2oMcLY">Brandon Sanderson's Writing Lecture (Writing Science Fiction &amp; Fantasy)</a></td>
-</tr>
-<tr>
-<td>Advanced Poetry Writing</td>
-<td>Explores experimental forms, sequences, and chapbooks to refine poetic voice and innovation.</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.amazon.com/Poets-Guide-Poetry-Second-Chicago/dp/0226923061"><em>A Poet's Guide to Poetry</em></a></td>
-<td>Covered in <a target="_blank" rel="noopener noreferrer" href="https://www.futurelearn.com/courses/how-to-make-a-poem">How to Make a Poem</a></td>
-</tr>
-<tr>
-<td>Advanced Screenwriting</td>
-<td>Builds on basics with focus on series development, pitching, and industry standards for professional scripts.</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.amazon.com/Save-Last-Screenwriting-Youll-Ever/dp/1932907009"><em>Save the Cat! The Last Book on Screenwriting You'll Ever Need</em></a></td>
-<td>Covered in <a target="_blank" rel="noopener noreferrer" href="https://www.futurelearn.com/courses/screenwriting">An Introduction to Screenwriting</a></td>
-</tr>
-<tr>
-<td>Genre Studies</td>
-<td>Analyzes genre conventions (e.g., sci-fi, mystery) to subvert or innovate, expanding versatility in commercial and literary markets.</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.tlu.ee/~rajaleid/montaazh/Christopher%20Vogler%20-%20Writers%20Journey.pdf"><em>The Writer's Journey: Mythic Structure for Writers</em></a></td>
-<td></td>
-</tr>
-<tr>
-<td>Poetic Forms and Traditions</td>
-<td>Surveys sonnets, haiku, free verse, and global traditions to inform culturally aware poetic practice.</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.amazon.com/Making-Poem-Norton-Anthology-Poetic/dp/0393321789"><em>The Making of a Poem: A Norton Anthology of Poetic Forms</em></a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://oyc.yale.edu/english/engl-310">Modern Poetry</a></td>
-</tr>
-<tr>
-<td>Adaptation Techniques</td>
-<td>Teaches converting books/stories to scripts or vice versa, bridging prose and visual media.</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.amazon.com/Adaptation-Studying-Literature-John-Desmond/dp/007282204X"><em>Adaptation: Studying Film and Literature</em></a></td>
-<td></td>
-</tr>
-<tr>
-<td>Literary Translation</td>
-<td>Introduces techniques for translating works across languages, emphasizing fidelity, cultural nuance, and creative reinterpretation.</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.amazon.com/Translation-Chicago-Writing-Editing-Publishing/dp/0226048691"><em>The Craft of Translation</em></a></td>
-<td></td>
-</tr>
-<tr>
-<td>Advanced Nonfiction Writing</td>
-<td>Advances memoir/essay forms with research integration and ethical considerations for impactful real-world narratives.</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.amazon.com/Tell-Slant-Third-Brenda-Miller/dp/1260454592"><em>Tell It Slant: Creating, Refining, and Publishing Creative Nonfiction</em></a></td>
-<td>Covered in <a target="_blank" rel="noopener noreferrer" href="https://www.open.edu/openlearn/history-the-arts/creative-writing-and-critical-reading/content-section-0">Creative writing and critical reading</a></td>
-</tr>
-</tbody>
-</table>
-</article>
-</main>
+<h2 id="fiction-the-novel-and-genre-craft">Fiction: The Novel and Genre Craft</h2>
+<p>Deepens novel-length narrative craft, with a focus on genre fiction, diagnostic revision, and sentence-level style.</p>
+<p>Genre Fiction Craft: <a href="https://www.youtube.com/playlist?list=PLSH_xM-KC3ZvzkfVo_Dls0B5GiE2oMcLY" target="_blank" rel="noopener noreferrer">Brandon Sanderson's Writing Lecture (BYU, 2025 edition)</a> - a free, university-level lecture series on plotting, worldbuilding, and character for speculative fiction, widely regarded as one of the best entry points into genre craft at depth.</p>
+<p>Novel Structure &amp; Diagnostic Revision: <a href="https://storygrid.com" target="_blank" rel="noopener noreferrer">Story Grid (Shawn Coyne)</a> - a free framework (podcast, blog, and diagnostic method) built by a veteran editor for figuring out why a full manuscript isn't working and how to fix it at the structural level.</p>
+<p>Mythic Structure &amp; Genre Convention: <a href="https://books.google.com/books?isbn=9781615933150" target="_blank" rel="noopener noreferrer">The Writer's Journey: Mythic Structure for Writers, 25th Anniversary Edition (Christopher Vogler)</a> - the standard text on archetypal plot structure, useful for understanding (and deliberately subverting) genre conventions.</p>
+<p>Advanced Prose Style &amp; Voice: <a href="https://books.google.com/books?isbn=9780307279415" target="_blank" rel="noopener noreferrer">Several Short Sentences About Writing (Verlyn Klinkenborg)</a> - a sentence-level meditation on rhythm and clarity, pitched well above introductory style guides.</p>
+<h2 id="poetry-advanced-form-and-experimentation">Poetry: Advanced Form and Experimentation</h2>
+<p>Covers advanced formal craft, the history of poetic forms across cultures, and critical immersion in modern and experimental poetics.</p>
+<p>Poetic Forms and Traditions: <a href="https://books.google.com/books?isbn=9780393321784" target="_blank" rel="noopener noreferrer">The Making of a Poem: A Norton Anthology of Poetic Forms (Mark Strand &amp; Eavan Boland)</a> - a chapter-by-chapter survey of major forms (sonnet, sestina, ghazal, and more) with exemplary poems for each.</p>
+<p>Modern &amp; Experimental Poetics: <a href="https://oyc.yale.edu/english/engl-310" target="_blank" rel="noopener noreferrer">Modern Poetry (Yale Open Courses, Langdon Hammer)</a> - a free, full Yale lecture course on Yeats, Eliot, Pound, Stevens, Moore, Bishop, and the major shifts of 20th-century poetics; read alongside your own writing practice rather than as a substitute for it.</p>
+<p>Advanced Poetic Voice &amp; Process: <a href="https://books.google.com/books?isbn=9780393309331" target="_blank" rel="noopener noreferrer">The Triggering Town (Richard Hugo)</a> - a classic, opinionated set of lectures and essays on where poems come from and how to trust your own material once you're past the basics.</p>
+<h2 id="screenwriting-dramatic-writing">Screenwriting &amp; Dramatic Writing</h2>
+<p>Builds on core screenwriting fundamentals with advanced structure, series writing, and adaptation across media.</p>
+<p>Screenplay Structure &amp; Narrative Theory: <a href="https://books.google.com/books?isbn=9780060391683" target="_blank" rel="noopener noreferrer">Story: Substance, Structure, Style and the Principles of Screenwriting (Robert McKee)</a> - the field's most rigorous treatment of dramatic structure and the relationship between character and plot.</p>
+<p>Screenplay Structure &amp; Narrative Theory: <a href="https://books.google.com/books?isbn=9781932907001" target="_blank" rel="noopener noreferrer">Save the Cat! (Blake Snyder)</a> - a complement to McKee rather than a substitute: a practical, industry-standard beat-sheet approach used widely for outlining and pitching feature scripts.</p>
+<p>Television Series Writing: <a href="https://books.google.com/books?isbn=9781615932931" target="_blank" rel="noopener noreferrer">Writing the TV Drama Series, 4th Edition (Pamela Douglas)</a> - a step-by-step guide to the specific demands of series structure, writers' rooms, and pitching a show, distinct from feature screenwriting.</p>
+<p>Adapting Existing Work Across Media: <a href="https://books.google.com/books?isbn=9780072822045" target="_blank" rel="noopener noreferrer">Adaptation: Studying Film and Literature (John Desmond &amp; Peter Hawkes)</a> - covers the analytical and practical choices involved in adapting novels, stories, and plays for the screen.</p>
+<h2 id="literary-nonfiction-narrative-journalism">Literary Nonfiction &amp; Narrative Journalism</h2>
+<p>Covers long-form true-story craft, the personal essay at an advanced level, and the ethical questions specific to writing nonfiction as literature.</p>
+<p>Long-Form Narrative Nonfiction Craft: <a href="https://books.google.com/books?isbn=9780452287556" target="_blank" rel="noopener noreferrer">Telling True Stories: A Nonfiction Writers' Guide from the Nieman Foundation at Harvard University</a> - advice from working narrative journalists (Tom Wolfe, Gay Talese, Malcolm Gladwell, and dozens more) on structuring and selling true stories.</p>
+<p>Long-Form Narrative Nonfiction Craft: <a href="https://niemanstoryboard.org" target="_blank" rel="noopener noreferrer">Nieman Storyboard</a> - a free, ongoing companion to the book above: line-by-line annotations and "why's this so good?" breakdowns of standout narrative nonfiction.</p>
+<p>Advanced Personal Essay &amp; Memoir: <a href="https://books.google.com/books?isbn=9780374528584" target="_blank" rel="noopener noreferrer">The Situation and the Story (Vivian Gornick)</a> - a close study of how personal narrative constructs a persona and a "truth-speaker," drawn from a century of memoir and essay.</p>
+<p>Ethics, Truth, and Fact in Nonfiction: <a href="https://books.google.com/books?isbn=9780393340730" target="_blank" rel="noopener noreferrer">The Lifespan of a Fact (John D'Agata &amp; Jim Fingal)</a> - a real dispute between an essayist and his fact-checker, staged as a book, that makes the tension between narrative license and factual accuracy concrete rather than abstract.</p>
+<h2 id="literary-translation">Literary Translation</h2>
+<p>Covers the craft and theory of carrying literary work across languages, for multilingual writers who want to translate as well as write.</p>
+<p>Theory and Practice of Literary Translation: <a href="https://books.google.com/books?isbn=9780226048697" target="_blank" rel="noopener noreferrer">The Craft of Translation (ed. John Biguenet &amp; Rainer Schulte)</a> - essays by working literary translators on the specific problems of moving a text between languages.</p>
+<p>Translating Poetry: <a href="https://books.google.com/books?isbn=9780811226202" target="_blank" rel="noopener noreferrer">Nineteen Ways of Looking at Wang Wei (Eliot Weinberger)</a> - a short, close study of nineteen different translations of a single classical Chinese poem, making the stakes of every translation choice visible.</p>
+<p>Translating Prose: Voice and Fidelity: <a href="https://books.google.com/books?isbn=9781910695456" target="_blank" rel="noopener noreferrer">This Little Art (Kate Briggs)</a> - a book-length essay on the experience of translating prose, grounded in the author's own work translating Roland Barthes.</p>
+    </article>
+  </main>
 
 </body>
 </html>

@@ -1,207 +1,354 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="color-scheme" content="light dark">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
 
-<title>Extra Courses</title>
-<link rel="stylesheet" href="/creative-writing/style.css">
-<meta name="description" content="">
+  <title>Great Courses</title>
+  <meta name="description" content="A lightweight static page by hocbigg.">
+  <meta name="author" content="hocbigg">
 
-<link rel="canonical" href="https://hocbigg.github.io/creative-writing/">
+  <link rel="canonical" href="https://hocbigg.github.io/creative-writing/extras/courses.html">
+  <meta property="og:title" content="Great Courses">
+  <meta property="og:description" content="A lightweight static page by hocbigg.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hocbigg.github.io/creative-writing/extras/courses.html">
+  <link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
 
-<meta property="og:title" content="Extra Courses">
-<meta property="og:description" content="">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://hocbigg.github.io/creative-writing/">
-<meta name="author" content="hocbigg">
-<link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
+  <style>
+:root {
+  color-scheme: light dark;
+
+  --bg: #ffffff;
+  --fg: #1a1a1a;
+  --muted: #595959;
+  --border: #e0e0e0;
+  --th-bg: #f6f8fa;
+  --code-bg: #f4f4f4;
+  --link: #0969da;
+  --focus-ring: #0969da;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1117;
+    --fg: #e6edf3;
+    --muted: #8b949e;
+    --border: #30363d;
+    --th-bg: #161b22;
+    --code-bg: #161b22;
+    --link: #58a6ff;
+    --focus-ring: #58a6ff;
+  }
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 1.5rem auto;
+  max-width: 60rem;
+  padding: 0 1rem 3.5rem;
+  background-color: var(--bg);
+  color: var(--fg);
+  font: 1.15rem/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  
+  /* Cú pháp hiện đại thay thế cho word-wrap */
+  overflow-wrap: break-word;
+}
+
+.site-header {
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1rem;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 0.5rem 1.25rem;
+  font-size: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+nav a:hover, 
+nav a:focus-visible {
+  color: var(--fg);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+nav .nav-brand {
+  color: var(--fg);
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+
+.skip-link {
+  position: absolute;
+  transform: translateY(-150%);
+  left: 1rem;
+  background: var(--fg);
+  color: var(--bg);
+  padding: 0.5rem 1rem;
+  z-index: 100;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: transform 0.2s ease;
+}
+
+.skip-link:focus {
+  transform: translateY(1rem);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.3;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--fg);
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 2rem;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--border);
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1.15rem;
+}
+
+h6 {
+  font-size: 1rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+p, ul, ol, blockquote, table {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+}
+
+li > ul,
+li > ol {
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+}
+
+li {
+  margin-bottom: 0.25rem;
+}
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+a:has(img) {
+  text-decoration: none;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page-header img {
+  margin: 0 auto 1rem;
+  display: block;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.875em;
+  background-color: var(--code-bg);
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+}
+
+pre {
+  background-color: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1rem;
+  overflow-x: auto;
+  tab-size: 2;
+}
+
+pre code {
+  background: transparent;
+  padding: 0;
+  border: none;
+  font-size: 0.9rem;
+  border-radius: 0;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th, td {
+  border: 1px solid var(--border);
+  padding: 0.6rem 0.75rem;
+  vertical-align: top;
+}
+
+th {
+  background-color: var(--th-bg);
+  font-weight: 600;
+}
+
+blockquote {
+  margin-inline: 0;
+  border-left: 4px solid var(--border);
+  padding-left: 1rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media print {
+  body {
+    max-width: none;
+    color: #000;
+    background: #fff;
+  }
+  .skip-link, nav {
+    display: none;
+  }
+}
+  </style>
 </head>
-
 <body>
 
-<nav>
-<a href="/">Hocbigg</a>
-<a href="/creative-writing/">Creative-Writing</a>
-<a href="/creative-writing/advanced_topics.html">Advanced Topics</a>
-<a href="/creative-writing/projects.html">Projects</a>
-<a href="/creative-writing/extras/courses.html">Extra Courses</a>
-<a href="/creative-writing/extras/readings.html">Extra Reading</a>
-<a href="https://github.com/hocbigg/creative-writing/" target="_blank">View on Github</a>
-</nav>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-<main>
-<article>
+  <header class="site-header">
+    <nav aria-label="Main Navigation">
+    <ul>
+      <li><a href="https://hocbigg.github.io/" class="nav-brand">Hocbigg</a></li>
+      <li><a href="/creative-writing/">Creative Writing</a></li>
+      <li><a href="/creative-writing/advanced_topics.html">Advanced Topics</a></li>
+      <li><a href="/creative-writing/projects.html">Projects</a></li>
+      <li><a href="/creative-writing/extras/readings.html">Extra Readings</a></li>
+      <li><a href="/creative-writing/extras/courses.html">Extra Courses</a></li>
+      <li><a href="https://github.com/hocbigg/creative-writing" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> (opens in new tab)</span></a></li>
+    </ul>
+    </nav>
+  </header>
 
-<h1 id="extra-courses">Extra Courses</h1>
-<p>This is a list of high-quality courses that, for one reason or another, didn't make it into the curriculum (irregular scheduling, overlap with a stronger core course, narrowly specialized focus, or excellent but not essential).</p>
-<h2 id="fiction-narrative-craft">Fiction &amp; Narrative Craft</h2>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Courses</th>
-<th style="text-align: center;">Duration</th>
-<th style="text-align: center;">Effort</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://ocw.mit.edu/courses/21w-759-writing-science-fiction-and-fantasy-spring-2013/">MIT OCW – Writing Science Fiction &amp; Fantasy</a></td>
-<td style="text-align: center;">12 weeks</td>
-<td style="text-align: center;">self-paced</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://www.edx.org/learn/communication/the-university-of-british-columbia-how-to-write-a-novel">University of British Columbia – How to Write a Novel (edX)</a></td>
-<td style="text-align: center;">10 weeks</td>
-<td style="text-align: center;">5–8 hrs/week</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://www.edx.org/learn/arts-and-humanities/ubc-creative-writing-novel-writing">University of British Columbia – Novel Writing: The First Draft (edX)</a></td>
-<td style="text-align: center;">12 weeks</td>
-<td style="text-align: center;">5–8 hrs/week</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://www.futurelearn.com/courses/start-writing-fiction">FutureLearn – Start Writing Fiction (Open University)</a></td>
-<td style="text-align: center;">8 weeks</td>
-<td style="text-align: center;">3 hrs/week</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://pll.harvard.edu/course/ancient-masterpieces-world-literature">Harvard – Ancient Masterpieces of World Literature</a></td>
-<td style="text-align: center;">6 weeks</td>
-<td style="text-align: center;">4–7 hrs/week</td>
-</tr>
-</tbody>
-</table>
-<h2 id="poetry-poetics">Poetry &amp; Poetics</h2>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Courses</th>
-<th style="text-align: center;">Duration</th>
-<th style="text-align: center;">Effort</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://ocw.mit.edu/courses/21l-004-reading-poetry-fall-2005/">MIT OCW – Reading Poetry</a></td>
-<td style="text-align: center;">12 weeks</td>
-<td style="text-align: center;">self-paced</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://www.coursera.org/learn/poetry-painting">University of Pennsylvania – Poetry and Painting</a></td>
-<td style="text-align: center;">4 weeks</td>
-<td style="text-align: center;">2–4 hrs/week</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://www.open.edu/openlearn/history-the-arts/what-poetry/content-section-0">Open University – What is Poetry?</a></td>
-<td style="text-align: center;">–</td>
-<td style="text-align: center;">~8 hours</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://www.edx.org/learn/arts-and-humanities/harvard-university-poetry-in-america-the-civil-war">Harvard – Emily Dickinson (Poetry in America series)</a></td>
-<td style="text-align: center;">4–8 weeks</td>
-<td style="text-align: center;">4–6 hrs/week</td>
-</tr>
-</tbody>
-</table>
-<h2 id="creative-nonfiction-essay-journalism">Creative Nonfiction, Essay, Journalism</h2>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Courses</th>
-<th style="text-align: center;">Duration</th>
-<th style="text-align: center;">Effort</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://pll.harvard.edu/course/journalism-better-democracy">Harvard – Journalism for a Better Democracy</a></td>
-<td style="text-align: center;">7 weeks</td>
-<td style="text-align: center;">2–4 hrs/week</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://www.coursera.org/learn/writing-editing-revising">University of Michigan – Writing and Editing: Revising</a></td>
-<td style="text-align: center;">4 weeks</td>
-<td style="text-align: center;">4–6 hrs/week</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://www.edx.org/learn/english/uc-berkeley-english-for-journalists-values-ethics-and-legal-issues">UC BerkeleyX – English for Journalists: Values, Ethics, and Legal Issues</a></td>
-<td style="text-align: center;">5 weeks</td>
-<td style="text-align: center;">3–5 hrs/week</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://ocw.mit.edu/courses/21w-755-writing-and-reading-short-stories-fall-2012/">MIT OCW – Writing and Reading Short Stories (alternate semester)</a></td>
-<td style="text-align: center;">12 weeks</td>
-<td style="text-align: center;">self-paced</td>
-</tr>
-</tbody>
-</table>
-<h2 id="playwriting-screenwriting-dramatic-forms">Playwriting, Screenwriting &amp; Dramatic Forms</h2>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Courses</th>
-<th style="text-align: center;">Duration</th>
-<th style="text-align: center;">Effort</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://www.futurelearn.com/courses/screenwriting">FutureLearn – An Introduction to Screenwriting</a></td>
-<td style="text-align: center;">2–3 weeks</td>
-<td style="text-align: center;">3 hrs/week</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://www.edx.org/learn/film/uci-screenwriting-writing-a-feature-film-script">edX – Screenwriting: Writing a Feature Film Script</a></td>
-<td style="text-align: center;">6 weeks</td>
-<td style="text-align: center;">6–7 hrs/week</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://www.futurelearn.com/courses/how-to-read-a-play">FutureLearn – How to Read a Play</a></td>
-<td style="text-align: center;">3 weeks</td>
-<td style="text-align: center;">3 hrs/week</td>
-</tr>
-</tbody>
-</table>
-<h2 id="digital-interactive-and-experimental-writing">Digital, Interactive, and Experimental Writing</h2>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Courses</th>
-<th style="text-align: center;">Duration</th>
-<th style="text-align: center;">Effort</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://www.edx.org/learn/arts-and-humanities/university-of-adelaide-creativity-and-ai">University of Adelaide – Creativity &amp; AI (edX)</a></td>
-<td style="text-align: center;">7 weeks</td>
-<td style="text-align: center;">2–4 hrs/week</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://pll.harvard.edu/course/ancient-masterpieces-digital-age">Harvard – Ancient Masterpieces in the Digital Age</a></td>
-<td style="text-align: center;">6 weeks</td>
-<td style="text-align: center;">4–6 hrs/week</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://www.coursera.org/learn/narrative-design">Unity / Coursera – Narrative Design for Games</a></td>
-<td style="text-align: center;">4 weeks</td>
-<td style="text-align: center;">4–6 hrs/week</td>
-</tr>
-</tbody>
-</table>
-<h2 id="other-curricula">Other curricula</h2>
-<p>This curriculum is one of a few efforts to inform learners how they can pursue Creative Writing independently. Below are a few other such efforts.</p>
+  <main id="main-content">
+    <article>
+
+<h1 id="great-courses">Great Courses</h1>
+<p>A curated directory of standout university OpenCourseWare lectures, landmark MOOCs, and comprehensive audiovisual deep-dives in Creative Writing and literary craft. These courses move beyond introductory writing tutorials to offer rigorous craft analysis, masterclasses in narrative architecture, and deep historical and formal context.</p>
+<h2 id="fiction-narrative-architecture">Fiction &amp; Narrative Architecture</h2>
 <ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://creativewriting.ubc.ca/undergraduate/">University of British Columbia – Creative Writing BFA Requirements</a></li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://creativewriting.stanford.edu/academics">Stanford Creative Writing Track (English Major)</a></li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://ocw.mit.edu/courses/find-by-topic/#cat=humanities&amp;subcat=writing">MIT Comparative Media Studies / Writing OCW Track</a></li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.open.edu/openlearn/history-the-arts/free-courses">Open University – Creative Writing Course Collections</a></li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.writingclasses.com/tools">Gotham Writers Workshop – Writing Guides</a></li>
+<li><a href="https://www.coursera.org/learn/craft-of-plot" target="_blank" rel="noopener noreferrer">Creative Writing: The Craft of Plot (Coursera / Wesleyan University / Brando Skyhorse)</a></li>
+<li><a href="https://www.coursera.org/learn/craft-of-character" target="_blank" rel="noopener noreferrer">Creative Writing: The Craft of Character (Coursera / Wesleyan University / Amy Bloom)</a></li>
+<li><a href="https://www.coursera.org/learn/craft-of-setting" target="_blank" rel="noopener noreferrer">Creative Writing: The Craft of Setting and Description (Coursera / Wesleyan University / Amity Gaige)</a></li>
+<li><a href="https://www.open.edu/openlearn/history-the-arts/creative-writing/start-writing-fiction/content-section-0" target="_blank" rel="noopener noreferrer">Start Writing Fiction (OpenLearn / The Open University)</a></li>
 </ul>
-</article>
-</main>
+<h2 id="poetry-modern-poetics">Poetry &amp; Modern Poetics</h2>
+<ul>
+<li><a href="https://www.coursera.org/learn/modpo" target="_blank" rel="noopener noreferrer">Modern &amp; Contemporary American Poetry - ModPo (Coursera / University of Pennsylvania / Al Filreis)</a></li>
+<li><a href="https://www.coursera.org/learn/poetry-workshop" target="_blank" rel="noopener noreferrer">Sharpened Visions: A Poetry Workshop (Coursera / California Institute of the Arts / Douglas Kearney)</a></li>
+<li><a href="https://oyc.yale.edu/english/engl-310" target="_blank" rel="noopener noreferrer">ENGL 310: Modern Poetry (Open Yale Courses / Langdon Hammer)</a></li>
+<li>Poetry in America: The City That Is Shipwrecked and Emily Dickinson (edX / Harvard University / Elisa New)</li>
+</ul>
+<h2 id="dramatic-writing-stage-screen">Dramatic Writing, Stage &amp; Screen</h2>
+<ul>
+<li>Script Writing: Write a Feature-Length Screenplay for Film or Television (Coursera / Michigan State University / David Wheeler)</li>
+<li>Screenwriting: Writing a Feature Film Script (edX / University of California, Irvine)</li>
+<li>Dialogue and Dramatic Action Masterclass (StudioBinder Series)</li>
+<li>The Tools of Screenwriting Workshop Series (American Film Institute)</li>
+</ul>
+<h2 id="literary-analysis-craft-based-reading">Literary Analysis &amp; Craft-Based Reading</h2>
+<ul>
+<li><a href="https://oyc.yale.edu/english/engl-291" target="_blank" rel="noopener noreferrer">ENGL 291: The American Novel Since 1945 (Open Yale Courses / Amy Hungerford)</a></li>
+<li><a href="https://oyc.yale.edu/english/engl-300" target="_blank" rel="noopener noreferrer">ENGL 300: Introduction to Theory of Literature (Open Yale Courses / Paul Fry)</a></li>
+<li><a href="https://oyc.yale.edu/english/engl-220" target="_blank" rel="noopener noreferrer">ENGL 220: Milton (Open Yale Courses / John Rogers)</a></li>
+<li><a href="https://www.open.edu/openlearn/history-the-arts/creative-writing/creative-writing-and-critical-reading/content-section-0" target="_blank" rel="noopener noreferrer">Creative Writing and Critical Reading (OpenLearn / The Open University)</a></li>
+<li><a href="https://www.open.edu/openlearn/history-the-arts/creative-writing/writing-what-you-know/content-section-0" target="_blank" rel="noopener noreferrer">Writing What You Know: Personal Experience and Creative Nonfiction (OpenLearn / The Open University)</a></li>
+</ul>
+<h2 id="specialized-digital-professional-practice">Specialized, Digital &amp; Professional Practice</h2>
+<ul>
+<li><a href="https://www.coursera.org/learn/craft-of-style" target="_blank" rel="noopener noreferrer">Creative Writing: The Craft of Style (Coursera / Wesleyan University / Salvatore Scibona)</a></li>
+<li><a href="https://www.coursera.org/specializations/good-with-words" target="_blank" rel="noopener noreferrer">Good with Words: Writing and Editing Specialization (Coursera / University of Michigan / Patrick Barry)</a></li>
+<li><a href="https://ocw.mit.edu/courses/comparative-media-studies-writing/" target="_blank" rel="noopener noreferrer">Comparative Media Studies and Writing OpenCourseWare Curriculum (MIT OCW)</a></li>
+<li>Narrative Design and Interactive Storytelling with Twine (Digital Games Research Association / Open Materials)</li>
+</ul>
+    </article>
+  </main>
 
 </body>
 </html>

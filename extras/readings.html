@@ -1,144 +1,496 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="color-scheme" content="light dark">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
 
-<title>Extra Reading</title>
-<link rel="stylesheet" href="/creative-writing/style.css">
-<meta name="description" content="">
+  <title>Great Readings</title>
+  <meta name="description" content="A lightweight static page by hocbigg.">
+  <meta name="author" content="hocbigg">
 
-<link rel="canonical" href="https://hocbigg.github.io/creative-writing/">
+  <link rel="canonical" href="https://hocbigg.github.io/creative-writing/extras/readings.html">
+  <meta property="og:title" content="Great Readings">
+  <meta property="og:description" content="A lightweight static page by hocbigg.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hocbigg.github.io/creative-writing/extras/readings.html">
+  <link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
 
-<meta property="og:title" content="Extra Reading">
-<meta property="og:description" content="">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://hocbigg.github.io/creative-writing/">
-<meta name="author" content="hocbigg">
-<link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
+  <style>
+:root {
+  color-scheme: light dark;
+
+  --bg: #ffffff;
+  --fg: #1a1a1a;
+  --muted: #595959;
+  --border: #e0e0e0;
+  --th-bg: #f6f8fa;
+  --code-bg: #f4f4f4;
+  --link: #0969da;
+  --focus-ring: #0969da;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1117;
+    --fg: #e6edf3;
+    --muted: #8b949e;
+    --border: #30363d;
+    --th-bg: #161b22;
+    --code-bg: #161b22;
+    --link: #58a6ff;
+    --focus-ring: #58a6ff;
+  }
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 1.5rem auto;
+  max-width: 60rem;
+  padding: 0 1rem 3.5rem;
+  background-color: var(--bg);
+  color: var(--fg);
+  font: 1.15rem/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  
+  /* Cú pháp hiện đại thay thế cho word-wrap */
+  overflow-wrap: break-word;
+}
+
+.site-header {
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1rem;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 0.5rem 1.25rem;
+  font-size: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+nav a:hover, 
+nav a:focus-visible {
+  color: var(--fg);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+nav .nav-brand {
+  color: var(--fg);
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+
+.skip-link {
+  position: absolute;
+  transform: translateY(-150%);
+  left: 1rem;
+  background: var(--fg);
+  color: var(--bg);
+  padding: 0.5rem 1rem;
+  z-index: 100;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: transform 0.2s ease;
+}
+
+.skip-link:focus {
+  transform: translateY(1rem);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.3;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--fg);
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 2rem;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--border);
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1.15rem;
+}
+
+h6 {
+  font-size: 1rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+p, ul, ol, blockquote, table {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+}
+
+li > ul,
+li > ol {
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+}
+
+li {
+  margin-bottom: 0.25rem;
+}
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+a:has(img) {
+  text-decoration: none;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page-header img {
+  margin: 0 auto 1rem;
+  display: block;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.875em;
+  background-color: var(--code-bg);
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+}
+
+pre {
+  background-color: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1rem;
+  overflow-x: auto;
+  tab-size: 2;
+}
+
+pre code {
+  background: transparent;
+  padding: 0;
+  border: none;
+  font-size: 0.9rem;
+  border-radius: 0;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th, td {
+  border: 1px solid var(--border);
+  padding: 0.6rem 0.75rem;
+  vertical-align: top;
+}
+
+th {
+  background-color: var(--th-bg);
+  font-weight: 600;
+}
+
+blockquote {
+  margin-inline: 0;
+  border-left: 4px solid var(--border);
+  padding-left: 1rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media print {
+  body {
+    max-width: none;
+    color: #000;
+    background: #fff;
+  }
+  .skip-link, nav {
+    display: none;
+  }
+}
+  </style>
 </head>
-
 <body>
 
-<nav>
-<a href="/">Hocbigg</a>
-<a href="/creative-writing/">Creative-Writing</a>
-<a href="/creative-writing/advanced_topics.html">Advanced Topics</a>
-<a href="/creative-writing/projects.html">Projects</a>
-<a href="/creative-writing/extras/courses.html">Extra Courses</a>
-<a href="/creative-writing/extras/readings.html">Extra Reading</a>
-<a href="https://github.com/hocbigg/creative-writing/" target="_blank">View on Github</a>
-</nav>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-<main>
-<article>
+  <header class="site-header">
+    <nav aria-label="Main Navigation">
+    <ul>
+      <li><a href="https://hocbigg.github.io/" class="nav-brand">Hocbigg</a></li>
+      <li><a href="/creative-writing/">Creative Writing</a></li>
+      <li><a href="/creative-writing/advanced_topics.html">Advanced Topics</a></li>
+      <li><a href="/creative-writing/projects.html">Projects</a></li>
+      <li><a href="/creative-writing/extras/readings.html">Extra Readings</a></li>
+      <li><a href="/creative-writing/extras/courses.html">Extra Courses</a></li>
+      <li><a href="https://github.com/hocbigg/creative-writing" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> (opens in new tab)</span></a></li>
+    </ul>
+    </nav>
+  </header>
 
-<h1 id="extra-reading">Extra Reading</h1>
-<p>This document consists of great books or articles on Creative Writing.
-Some are here because there is a course covering the same material;
-some are just great books that you should read at some point in your career.</p>
-<p>Once you have made it through most of the curriculum, knowing whether a book is worth your time will become easier.
-Or, if you are struggling in one of the courses, perhaps reading a book on the subject will help.</p>
-<table>
+  <main id="main-content">
+    <article>
+
+<h1 id="great-readings">Great Readings</h1>
+<p>A curated bibliography of landmark treatises, seminal craft essays, aesthetic manifestos, and transformative monographs in Creative Writing. These works move beyond introductory "how-to" guides to explore how master writers and theorists investigate narrative ontology, develop formal innovations, and articulate the philosophy of the written word.</p>
+<h2 id="classical-aesthetics-foundational-poetics">Classical Aesthetics &amp; Foundational Poetics</h2>
+<div class="table-wrapper" tabindex="0" role="region" aria-label="Scrollable table"><table>
 <thead>
 <tr>
-<th style="text-align: center;">Name</th>
-<th style="text-align: center;">Author(s)</th>
+<th>Title</th>
+<th>Author(s)</th>
+<th>Type</th>
+<th>Why It's Worth Reading</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: center;"><em>The Writing Life</em></td>
-<td style="text-align: center;">Annie Dillard</td>
+<td><a href="https://www.gutenberg.org/ebooks/1974" target="_blank" rel="noopener noreferrer"><em>Poetics</em></a></td>
+<td>Aristotle</td>
+<td>Treatise</td>
+<td>Establishes the Western foundation of dramatic narrative architecture, defining <em>mimesis</em>, <em>hamartia</em>, peripeteia, and catharsis through structural causality.</td>
 </tr>
 <tr>
-<td style="text-align: center;"><em>Bird by Bird</em></td>
-<td style="text-align: center;">Anne Lamott</td>
+<td><em>On the Sublime</em></td>
+<td>Longinus</td>
+<td>Treatise</td>
+<td>Investigates the psychological and aesthetic power of great literature to transport and overwhelm the reader beyond mere rhetorical persuasion.</td>
 </tr>
 <tr>
-<td style="text-align: center;"><em>Steering the Craft</em></td>
-<td style="text-align: center;">Ursula K. Le Guin</td>
+<td><em>Ars Poetica</em></td>
+<td>Horace</td>
+<td>Verse Epistle / Treatise</td>
+<td>Formulates the enduring classical maxims of literary craft, including unity of form, character consistency, <em>in medias res</em>, and the dual mandate to instruct and delight.</td>
 </tr>
 <tr>
-<td style="text-align: center;"><em>On Writing</em></td>
-<td style="text-align: center;">Stephen King</td>
-</tr>
-<tr>
-<td style="text-align: center;"><em>The Art of Fiction</em></td>
-<td style="text-align: center;">John Gardner</td>
-</tr>
-<tr>
-<td style="text-align: center;"><em>The Art of Memoir</em></td>
-<td style="text-align: center;">Mary Karr</td>
-</tr>
-<tr>
-<td style="text-align: center;"><em>Reading Like a Writer</em></td>
-<td style="text-align: center;">Francine Prose</td>
-</tr>
-<tr>
-<td style="text-align: center;"><em>The Poet’s Companion</em></td>
-<td style="text-align: center;">Kim Addonizio &amp; Dorianne Laux</td>
-</tr>
-<tr>
-<td style="text-align: center;"><em>The Triggering Town</em></td>
-<td style="text-align: center;">Richard Hugo</td>
-</tr>
-<tr>
-<td style="text-align: center;"><em>The Making of a Poem</em></td>
-<td style="text-align: center;">Mark Strand &amp; Eavan Boland</td>
-</tr>
-<tr>
-<td style="text-align: center;"><em>The Situation and the Story</em></td>
-<td style="text-align: center;">Vivian Gornick</td>
-</tr>
-<tr>
-<td style="text-align: center;"><em>Wonderbook: The Illustrated Guide to Creating Imaginative Fiction</em></td>
-<td style="text-align: center;">Jeff VanderMeer</td>
-</tr>
-<tr>
-<td style="text-align: center;"><em>Craft in the Real World</em></td>
-<td style="text-align: center;">Matthew Salesses</td>
-</tr>
-<tr>
-<td style="text-align: center;"><em>The Paris Review Interviews (Series)</em></td>
-<td style="text-align: center;">Multiple authors</td>
+<td><a href="https://www.poetryfoundation.org/articles/69390/the-philosophy-of-composition" target="_blank" rel="noopener noreferrer"><em>The Philosophy of Composition</em></a></td>
+<td>Edgar Allan Poe</td>
+<td>Essay</td>
+<td>A pioneering analytical deconstruction of the creative process that rejects romantic mysticism in favor of deliberate mathematical effect and unity of impression.</td>
 </tr>
 </tbody>
-</table>
-<p>Open/free classics:</p>
-<table>
+</table></div>
+<h2 id="modernist-manifestos-craft-foundations">Modernist Manifestos &amp; Craft Foundations</h2>
+<div class="table-wrapper" tabindex="0" role="region" aria-label="Scrollable table"><table>
 <thead>
 <tr>
-<th style="text-align: left;">Name</th>
-<th style="text-align: left;">Author(s)</th>
+<th>Title</th>
+<th>Author(s)</th>
+<th>Type</th>
+<th>Why It's Worth Reading</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><em>Poetics</em></td>
-<td style="text-align: left;">Aristotle</td>
+<td><em>The Art of Fiction</em></td>
+<td>Henry James</td>
+<td>Essay / Manifesto</td>
+<td>Defends the novel as a serious fine art form and argues for absolute organic freedom in subject matter, driven by felt experience rather than rigid moralizing.</td>
 </tr>
 <tr>
-<td style="text-align: left;"><em>The Art of Fiction</em> (public domain essays)</td>
-<td style="text-align: left;">Henry James</td>
+<td><em>Aspects of the Novel</em></td>
+<td>E. M. Forster</td>
+<td>Lecture Series / Book</td>
+<td>Introduces seminal narrative distinctions—most famously flat versus round characters and the crucial difference between episodic "story" and causal "plot."</td>
 </tr>
 <tr>
-<td style="text-align: left;"><em>Story of an Hour</em> (for analysis practice)</td>
-<td style="text-align: left;">Kate Chopin</td>
+<td><em>Modern Fiction</em></td>
+<td>Virginia Woolf</td>
+<td>Essay</td>
+<td>Challenges materialist Victorian realism, urging writers to capture the luminous, unmanaged impressions of the mind as an "incessant shower of innumerable atoms."</td>
 </tr>
 <tr>
-<td style="text-align: left;"><em>The Raven</em> and many poems</td>
-<td style="text-align: left;">Edgar Allan Poe</td>
+<td><em>Art as Technique</em> (<em>Art as Device</em>)</td>
+<td>Viktor Shklovsky</td>
+<td>Landmark Essay</td>
+<td>Introduces the concept of <em>defamiliarization</em> (<em>ostranenie</em>), arguing that the central purpose of art is to make familiar objects strange so we truly perceive rather than merely recognize them.</td>
 </tr>
 <tr>
-<td style="text-align: left;"><em>Leaves of Grass</em> (various editions)</td>
-<td style="text-align: left;">Walt Whitman</td>
+<td><em>The Storyteller: Reflections on the Works of Nikolai Leskov</em></td>
+<td>Walter Benjamin</td>
+<td>Landmark Essay</td>
+<td>Traces the historical decline of oral storytelling and practical counsel in the rise of the isolated modern novel and information-driven media.</td>
+</tr>
+<tr>
+<td><em>Letters to a Young Poet</em></td>
+<td>Rainer Maria Rilke</td>
+<td>Epistolary Monograph</td>
+<td>A profound philosophical exploration of artistic solitude, creative patience, inner necessity, and the discipline of living the questions.</td>
 </tr>
 </tbody>
-</table>
-</article>
-</main>
+</table></div>
+<h2 id="philosophy-of-narrative-structure-form">Philosophy of Narrative, Structure &amp; Form</h2>
+<div class="table-wrapper" tabindex="0" role="region" aria-label="Scrollable table"><table>
+<thead>
+<tr>
+<th>Title</th>
+<th>Author(s)</th>
+<th>Type</th>
+<th>Why It's Worth Reading</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>Six Memos for the Next Millennium</em></td>
+<td>Italo Calvino</td>
+<td>Lecture Series / Monograph</td>
+<td>Outlines five essential literary virtues—Lightness, Quickness, Exactitude, Visibility, and Multiplicity—essential for the survival and evolution of literature.</td>
+</tr>
+<tr>
+<td><em>The Carrier Bag Theory of Fiction</em></td>
+<td>Ursula K. Le Guin</td>
+<td>Landmark Essay</td>
+<td>Subverts hero-centric, spear-and-conflict-driven narrative paradigms in favor of a container/carrier bag model that gathers complex, sustained relationships.</td>
+</tr>
+<tr>
+<td><em>The Triggering Town: Lectures and Essays on Poetry and Writing</em></td>
+<td>Richard Hugo</td>
+<td>Craft Essays / Monograph</td>
+<td>Explores the psychological mechanics of poetic obsession, arguing that a poem's true subject is found in the sonic and imaginative drift away from its initial trigger.</td>
+</tr>
+<tr>
+<td><em>Meander, Spiral, Explode: Design and Pattern in Narrative</em></td>
+<td>Jane Alison</td>
+<td>Monograph</td>
+<td>Proposes non-linear structural alternatives to the ubiquitous Freytag's pyramid by drawing narrative geometries from natural forms such as spirals, waves, and fractals.</td>
+</tr>
+<tr>
+<td><em>The Art of Fiction: Notes on Craft for Young Writers</em></td>
+<td>John Gardner</td>
+<td>Craft Treatise</td>
+<td>Explores the discipline of creating and sustaining a "vivid and continuous fictional dream" through moral and technical artistic mastery.</td>
+</tr>
+<tr>
+<td><em>The Writing Life</em></td>
+<td>Annie Dillard</td>
+<td>Monograph / Reflections</td>
+<td>A lyrical, uncompromising meditation on the physical and psychological toll of literary composition, dedication, and creative sacrifice.</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="critical-perspectives-voice-workshop-decolonization">Critical Perspectives, Voice &amp; Workshop Decolonization</h2>
+<div class="table-wrapper" tabindex="0" role="region" aria-label="Scrollable table"><table>
+<thead>
+<tr>
+<th>Title</th>
+<th>Author(s)</th>
+<th>Type</th>
+<th>Why It's Worth Reading</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>Craft in the Real World: Rethinking Fiction Writing and Workshopping</em></td>
+<td>Matthew Salesses</td>
+<td>Monograph / Craft Treatise</td>
+<td>Critically re-evaluates traditional Iowa-model workshop assumptions, providing frameworks to teach and assess craft within cultural, historical, and marginalized contexts.</td>
+</tr>
+<tr>
+<td><em>Playing in the Dark: Whiteness and the Literary Imagination</em></td>
+<td>Toni Morrison</td>
+<td>Critical Monograph</td>
+<td>A foundational work of literary criticism analyzing how the construction of American national identity and canonical literature relies on a fabricated Africanist presence.</td>
+</tr>
+<tr>
+<td><em>Poetry Is Not a Luxury</em></td>
+<td>Audre Lorde</td>
+<td>Landmark Essay</td>
+<td>Argues that poetry is a vital necessity for survival, transformation, and revolutionary action, giving language to nameless feelings and revolutionary ideas.</td>
+</tr>
+<tr>
+<td><em>The Situation and the Story: The Art of Personal Narrative</em></td>
+<td>Vivian Gornick</td>
+<td>Monograph / Craft Treatise</td>
+<td>Distinguishes between the "situation" (the raw factual circumstances) and the "story" (the emotional insight achieved through a rigorously crafted narrator persona).</td>
+</tr>
+<tr>
+<td><em>The Paris Review Interviews (Series)</em></td>
+<td>The Paris Review</td>
+<td>Primary Archive</td>
+<td>Provides an unmatched documentary archive of master twentieth- and twenty-first-century writers detailing their drafting habits, revision strategies, and artistic philosophies.</td>
+</tr>
+</tbody>
+</table></div>
+    </article>
+  </main>
 
 </body>
 </html>

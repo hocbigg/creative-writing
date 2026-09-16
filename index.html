@@ -1,187 +1,401 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="color-scheme" content="light dark">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
 
-<title>Hocbigg - Creative Writing</title>
-<link rel="stylesheet" href="/creative-writing/style.css">
-<meta name="description" content="Path to a free self-taught education in Creative Writing!">
+  <title>Hocbigg - Creative Writing</title>
+  <meta name="description" content="Path to a free self-taught education in Creative Writing!">
+  <meta name="author" content="hocbigg">
 
-<link rel="canonical" href="https://hocbigg.github.io/creative-writing/">
+  <link rel="canonical" href="https://hocbigg.github.io/creative-writing/">
+  <meta property="og:title" content="Hocbigg - Creative Writing">
+  <meta property="og:description" content="Path to a free self-taught education in Creative Writing!">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hocbigg.github.io/creative-writing/">
+  <link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
 
-<meta property="og:title" content="Hocbigg - Creative Writing">
-<meta property="og:description" content="Path to a free self-taught education in Creative Writing!">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://hocbigg.github.io/creative-writing/">
-<meta name="author" content="hocbigg">
-<link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
+  <style>
+:root {
+  color-scheme: light dark;
+
+  --bg: #ffffff;
+  --fg: #1a1a1a;
+  --muted: #595959;
+  --border: #e0e0e0;
+  --th-bg: #f6f8fa;
+  --code-bg: #f4f4f4;
+  --link: #0969da;
+  --focus-ring: #0969da;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1117;
+    --fg: #e6edf3;
+    --muted: #8b949e;
+    --border: #30363d;
+    --th-bg: #161b22;
+    --code-bg: #161b22;
+    --link: #58a6ff;
+    --focus-ring: #58a6ff;
+  }
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 1.5rem auto;
+  max-width: 60rem;
+  padding: 0 1rem 3.5rem;
+  background-color: var(--bg);
+  color: var(--fg);
+  font: 1.15rem/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  
+  /* Cú pháp hiện đại thay thế cho word-wrap */
+  overflow-wrap: break-word;
+}
+
+.site-header {
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1rem;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 0.5rem 1.25rem;
+  font-size: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+nav a:hover, 
+nav a:focus-visible {
+  color: var(--fg);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+nav .nav-brand {
+  color: var(--fg);
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+
+.skip-link {
+  position: absolute;
+  transform: translateY(-150%);
+  left: 1rem;
+  background: var(--fg);
+  color: var(--bg);
+  padding: 0.5rem 1rem;
+  z-index: 100;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: transform 0.2s ease;
+}
+
+.skip-link:focus {
+  transform: translateY(1rem);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.3;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--fg);
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 2rem;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--border);
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1.15rem;
+}
+
+h6 {
+  font-size: 1rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+p, ul, ol, blockquote, table {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+}
+
+li > ul,
+li > ol {
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+}
+
+li {
+  margin-bottom: 0.25rem;
+}
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+a:has(img) {
+  text-decoration: none;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page-header img {
+  margin: 0 auto 1rem;
+  display: block;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.875em;
+  background-color: var(--code-bg);
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+}
+
+pre {
+  background-color: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1rem;
+  overflow-x: auto;
+  tab-size: 2;
+}
+
+pre code {
+  background: transparent;
+  padding: 0;
+  border: none;
+  font-size: 0.9rem;
+  border-radius: 0;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th, td {
+  border: 1px solid var(--border);
+  padding: 0.6rem 0.75rem;
+  vertical-align: top;
+}
+
+th {
+  background-color: var(--th-bg);
+  font-weight: 600;
+}
+
+blockquote {
+  margin-inline: 0;
+  border-left: 4px solid var(--border);
+  padding-left: 1rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media print {
+  body {
+    max-width: none;
+    color: #000;
+    background: #fff;
+  }
+  .skip-link, nav {
+    display: none;
+  }
+}
+  </style>
 </head>
-
 <body>
 
-<nav>
-<a href="/">Hocbigg</a>
-<a href="/creative-writing/">Creative-Writing</a>
-<a href="/creative-writing/advanced_topics.html">Advanced Topics</a>
-<a href="/creative-writing/projects.html">Projects</a>
-<a href="/creative-writing/extras/courses.html">Extra Courses</a>
-<a href="/creative-writing/extras/readings.html">Extra Reading</a>
-<a href="https://github.com/hocbigg/creative-writing/" target="_blank">View on Github</a>
-</nav>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-<main>
-<article>
+  <header class="site-header">
+    <nav aria-label="Main Navigation">
+    <ul>
+      <li><a href="https://hocbigg.github.io/" class="nav-brand">Hocbigg</a></li>
+      <li><a href="/creative-writing/">Creative Writing</a></li>
+      <li><a href="/creative-writing/advanced_topics.html">Advanced Topics</a></li>
+      <li><a href="/creative-writing/projects.html">Projects</a></li>
+      <li><a href="/creative-writing/extras/readings.html">Extra Readings</a></li>
+      <li><a href="/creative-writing/extras/courses.html">Extra Courses</a></li>
+      <li><a href="https://github.com/hocbigg/creative-writing" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> (opens in new tab)</span></a></li>
+    </ul>
+    </nav>
+  </header>
 
+  <main id="main-content">
+    <article>
 <header class="page-header">
-  <img src="/images/logo.png" alt="">
+  <img src="/images/logo.png" alt="Hocbigg logo">
   <h1>Hocbigg - Creative Writing</h1>
+  <p class="last-updated"><small>Last updated on: <time datetime="2026-09-16">2026-09-16</time></small></p>
 </header>
-
-<h1 id="contents">Contents</h1>
-<ul>
-<li><a href="#summary">Summary</a></li>
-<li><a href="#communities">Communities</a></li>
-<li><a href="#curriculum">Curriculum</a></li>
-<li><a href="#code-of-conduct">Code of conduct</a></li>
-</ul>
-<h1 id="summary">Summary</h1>
-<p>This curriculum is a complete, MOOC-based Creative Writing major equivalent to a traditional 4-year undergraduate program (minus general education not specific to the discipline).</p>
-<p>It builds a rigorous foundation in narrative craft, poetics, literary analysis, writing process, revision, and the professional habits needed by working writers.</p>
-<h2 id="organization">Organization</h2>
-<p>This repository is organized into three main components:</p>
-<ul>
-<li><strong>Core Curriculum</strong> (this page): the foundational knowledge of the field;</li>
-<li><strong><a href="advanced_topics.html">Advanced Topics</a></strong>: focused study in specific areas;</li>
-<li><strong><a href="projects.html">Projects</a></strong>: support learning through practical application throughout the curriculum.</li>
-</ul>
-<p><strong>Process:</strong> Learners may work through the curriculum independently or collaboratively, and either sequentially or selectively.</p>
-<ul>
-<li>For simplicity, courses in the Core Curriculum are ordered according to their prerequisites.</li>
-<li>The Core Curriculum provides a shared foundation and is intended to be completed in full.</li>
-<li>Advanced Topics are optional; learners are encouraged to select one area of focus and complete all courses within that topic.</li>
-</ul>
-<p>Practical work is integrated through the <a href="projects.html">Projects section</a> and may be undertaken alongside coursework.</p>
-<p>Note: When there are courses or books that don't fit into the curriculum but are otherwise of high quality,
-they belong in <a href="extras/courses.html">extras/courses</a>, <a href="extras/readings.html">extras/readings</a>.</p>
-<h1 id="communities">Communities</h1>
+<h2 id="introduction">Introduction</h2>
+<p>Creative writing is the practice of shaping language into fiction, poetry, and nonfiction with an eye toward voice, form, and effect rather than just information. People take it up for very different reasons — to tell stories they can't stop thinking about, to process experience on the page, or simply to get better at using language with precision and feeling. This curriculum won't tell you what to write about; it's meant to build the craft skills that make whatever you write about land.</p>
+<p>This is written for absolute beginners with no formal training in creative writing. You don't need a background in literature or an MFA-track vocabulary going in — the curriculum builds that vocabulary as you go. What it does assume is that you're willing to read closely, write regularly, and revise, since all three are treated as inseparable parts of the same skill rather than separate stages.</p>
+<p>The curriculum is organized in two phases, and the order matters more between phases than within them.</p>
+<ol>
+<li>Foundations of Craft comes first: it builds sentence-level control, teaches you to read published work analytically instead of just for pleasure, and gives you an initial multi-genre pass across fiction, poetry, and nonfiction so you have some common ground before specializing.</li>
+<li>Genre Workshops and Revision comes after, and within it the sequencing loosens — Fiction and Poetry are meant to be studied concurrently, since they build complementary skills, and Creative Nonfiction can run alongside them or follow right after. Editing and Revision isn't really a subject you finish and move past; it's meant to run continuously underneath whatever you're drafting in the other three.</li>
+</ol>
+<p>What's here is deliberately limited to what every creative writer needs regardless of what they end up writing: prose mechanics, close reading, and workshop-level grounding in the three core genres. It doesn't cover genre specialization (speculative fiction, screenwriting, literary translation, and so on), advanced narrative theory, or professional/publishing concerns — once you've worked through this curriculum, <a href="advanced_topics.html">Advanced Topics</a> picks up those specialized tracks. If you want more hands-on practice, more in-depth reading, or extended video and audio instruction beyond what's linked here, those live in <a href="projects.html">Projects</a>, <a href="extras/readings.html">Readings</a>, and <a href="extras/courses.html">Courses</a> respectively.</p>
+<h3 id="communities">Communities</h3>
 <ul>
 <li>Forums:<ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.scribophile.com/">Scribophile</a></li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.critiquecircle.com/">Critique Circle</a></li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://absolutewrite.com/forums/">Absolute Write Water Cooler</a></li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.writerscafe.org/">WritersCafe.org</a></li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.writingforums.com/">WritingForums.com</a></li>
+<li><a href="https://www.scribophile.com/" target="_blank" rel="noopener noreferrer">Scribophile</a></li>
+<li><a href="https://www.critiquecircle.com/" target="_blank" rel="noopener noreferrer">Critique Circle</a></li>
+<li><a href="https://absolutewrite.com/forums/" target="_blank" rel="noopener noreferrer">Absolute Write Water Cooler</a></li>
+<li><a href="https://www.writerscafe.org/" target="_blank" rel="noopener noreferrer">WritersCafe.org</a></li>
+<li><a href="https://www.writingforums.com/" target="_blank" rel="noopener noreferrer">WritingForums.com</a></li>
 </ul>
 </li>
 <li>Subreddits:<ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.reddit.com/r/writing/">r/writing</a></li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.reddit.com/r/WritingPrompts/">r/WritingPrompts</a></li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.reddit.com/r/DestructiveReaders/">r/DestructiveReaders</a></li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.reddit.com/r/KeepWriting/">r/KeepWriting</a></li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.reddit.com/r/fantasywriters/">r/fantasywriters</a></li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.reddit.com/r/scifiwriting/">r/scifiwriting</a></li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.reddit.com/r/Poetry/">r/Poetry</a></li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.reddit.com/r/Screenwriting/">r/Screenwriting</a></li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.reddit.com/r/FanFiction/">r/FanFiction</a></li>
+<li><a href="https://www.reddit.com/r/writing/" target="_blank" rel="noopener noreferrer">r/writing</a></li>
+<li><a href="https://www.reddit.com/r/WritingPrompts/" target="_blank" rel="noopener noreferrer">r/WritingPrompts</a></li>
+<li><a href="https://www.reddit.com/r/DestructiveReaders/" target="_blank" rel="noopener noreferrer">r/DestructiveReaders</a></li>
+<li><a href="https://www.reddit.com/r/KeepWriting/" target="_blank" rel="noopener noreferrer">r/KeepWriting</a></li>
+<li><a href="https://www.reddit.com/r/fantasywriters/" target="_blank" rel="noopener noreferrer">r/fantasywriters</a></li>
+<li><a href="https://www.reddit.com/r/scifiwriting/" target="_blank" rel="noopener noreferrer">r/scifiwriting</a></li>
+<li><a href="https://www.reddit.com/r/Poetry/" target="_blank" rel="noopener noreferrer">r/Poetry</a></li>
+<li><a href="https://www.reddit.com/r/Screenwriting/" target="_blank" rel="noopener noreferrer">r/Screenwriting</a></li>
+<li><a href="https://www.reddit.com/r/FanFiction/" target="_blank" rel="noopener noreferrer">r/FanFiction</a></li>
 </ul>
 </li>
 <li>Discord servers:<ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://discord.gg/writinghub">The Writing Hub (large &amp; active)</a></li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://discord.gg/reedsy">Reedsy Writing Community</a></li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://discord.gg/shutupandwrite">Shut Up &amp; Write! (global sprints)</a></li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://discord.gg/nanowrimo">NaNoWriMo Official Discord</a></li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://discord.gg/fantasywriters">Fantasy Writers Discord</a></li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://discord.gg/romancewriters">Romance Writers Café</a></li>
+<li><a href="https://discord.gg/writinghub" target="_blank" rel="noopener noreferrer">The Writing Hub (large &amp; active)</a></li>
+<li><a href="https://discord.gg/reedsy" target="_blank" rel="noopener noreferrer">Reedsy Writing Community</a></li>
+<li><a href="https://discord.gg/shutupandwrite" target="_blank" rel="noopener noreferrer">Shut Up &amp; Write! (global sprints)</a></li>
+<li><a href="https://discord.gg/nanowrimo" target="_blank" rel="noopener noreferrer">NaNoWriMo Official Discord</a></li>
+<li><a href="https://discord.gg/fantasywriters" target="_blank" rel="noopener noreferrer">Fantasy Writers Discord</a></li>
+<li><a href="https://discord.gg/romancewriters" target="_blank" rel="noopener noreferrer">Romance Writers Café</a></li>
 </ul>
 </li>
 <li>Other / Event-based:<ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.insecurewriterssupportgroup.com/">Insecure Writer’s Support Group</a></li>
+<li><a href="https://www.insecurewriterssupportgroup.com/" target="_blank" rel="noopener noreferrer">Insecure Writer’s Support Group</a></li>
 </ul>
 </li>
-<li>You can interact through <a target="_blank" rel="noopener noreferrer" href="https://github.com/hocbigg/creative-writing/issues">GitHub issues</a>. If there is a problem with a course, or a change needs to be made to the curriculum, this is the place to start the conversation. Read more <a href="/CONTRIBUTING.html">here</a>.</li>
-<li>
-<p>Join our Discord server (for discussions around this and other curricula): </p>
-<p><a target="_blank" rel="noopener noreferrer" href="https://discord.gg/KHqAv4Nvm5"><img alt="discord link" src="/assets/discord.png" /></a></p>
-</li>
+<li>You can interact through <a href="https://github.com/hocbigg/creative-writing/issues" target="_blank" rel="noopener noreferrer">GitHub issues</a>. If there is a problem with a course, or a change needs to be made to the curriculum, this is the place to start the conversation. Read more <a href="/CONTRIBUTING.html">here</a>.</li>
 </ul>
-<h1 id="curriculum">Curriculum</h1>
-<h2 id="intro-cw">Intro CW</h2>
-<p>This phase orients learners to the fundamentals of creative writing, emphasizing reading as a writer, basic literary analysis, and foundational writing skills. It establishes habits for close reading, drafting, and self-critique. Complete this phase before advancing to Core.</p>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Why study?</th>
-<th>Book</th>
-<th>Online Course</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Fundamentals of Writing</td>
-<td>Builds essential skills in grammar, style, and composition to ensure clear, effective expression as the basis for all creative work.</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.gutenberg.org/files/37134/37134-h/37134-h.htm"><em>The Elements of Style</em></a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://alison.com/course/diploma-in-effective-writing-skills">Diploma in Effective Writing Skills</a></td>
-</tr>
-<tr>
-<td>Reading and Literary Analysis</td>
-<td>Teaches how to read critically as a writer, identifying techniques in published works to inform one's own craft and develop analytical depth.</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.amazon.com/How-Read-Literature-Like-Professor/dp/0062301675"><em>How to Read Literature Like a Professor</em></a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://oyc.yale.edu/english/engl-300">Introduction to Theory of Literature</a></td>
-</tr>
-<tr>
-<td>Introduction to Creative Writing</td>
-<td>Provides an overview of creative processes, genres, and exercises to spark imagination and experiment with voice and form.</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.amazon.com/Bird-Some-Instructions-Writing-Life/dp/0385480016"><em>Bird by Bird: Some Instructions on Writing and Life</em></a> <br> <a target="_blank" rel="noopener noreferrer" href="https://www.amazon.com/Writing-Memoir-Craft-Stephen-King/dp/1982159375"><em>On Writing: A Memoir of the Craft</em></a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.open.edu/openlearn/history-the-arts/creative-writing/start-writing-fiction/content-section-0">Start writing fiction</a></td>
-</tr>
-</tbody>
-</table>
-<h2 id="core-cw">Core CW</h2>
-<p>This phase covers the essential subjects in creative writing, equivalent to the bulk of an undergraduate program. It introduces major genres, theoretical frameworks, and practical skills like editing. Subjects are sequenced to start with broad forms (fiction, poetry) and move to specialized ones (nonfiction), with basic critical reading integrated for deeper understanding.</p>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Why study?</th>
-<th>Book</th>
-<th>Online Course</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Fiction Writing</td>
-<td>Explores narrative structure, character development, and plotting to create compelling stories, forming the backbone of prose-based creativity.</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.amazon.com/Writing-Memoir-Craft-Stephen-King/dp/1982159375"><em>On Writing: A Memoir of the Craft</em></a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.open.edu/openlearn/history-the-arts/creative-writing/start-writing-fiction/content-section-0">Start writing fiction</a></td>
-</tr>
-<tr>
-<td>Poetry Writing</td>
-<td>Focuses on rhythm, imagery, metaphor, and form to express ideas concisely and evocatively, enhancing linguistic precision across all writing.</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.amazon.com/Poets-Companion-Pleasures-Writing-Poetry/dp/0393316548"><em>The Poet's Companion</em></a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.futurelearn.com/courses/how-to-make-a-poem">How to Make a Poem</a></td>
-</tr>
-<tr>
-<td>Creative Nonfiction Writing</td>
-<td>Teaches memoir, essays, and personal narrative techniques to blend voice, memory, and truth, building skills in authenticity and reflection.</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.amazon.com/Art-Creative-Nonfiction-Writing-Selling/dp/0471113565"><em>The Art of Creative Nonfiction</em></a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.open.edu/openlearn/history-the-arts/creative-writing-and-critical-reading/content-section-0">Creative writing and critical reading</a></td>
-</tr>
-<tr>
-<td>Editing and Revision</td>
-<td>Develops self-editing skills for clarity, concision, and impact, essential for polishing work and preparing for publication or feedback.</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.amazon.com/Self-Editing-Fiction-Writers-Second-Yourself/dp/0060545690"><em>Self-Editing for Fiction Writers</em></a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://alison.com/course/a-comprehensive-guide-to-creative-writing">Comprehensive Guide to Creative Writing</a></td>
-</tr>
-</tbody>
-</table>
-<p>Note: Start with Fiction and Poetry concurrently if possible, as they build foundational craft. Creative Nonfiction can follow or parallel. Editing should be studied alongside or after genres for immediate application.</p>
-<h1 id="code-of-conduct">Code of conduct</h1>
-<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/hocbigg/code-of-conduct">Hocbigg's code of conduct</a>.</p>
-</article>
-</main>
+<h2 id="curriculum">Curriculum</h2>
+<h3 id="fundamentals-of-writing">Fundamentals of Writing</h3>
+<p>Builds control over syntax, sentence rhythm, and prose mechanics so that creative expression on the page is clear and intentional.</p>
+<p><a href="https://www.gutenberg.org/files/37134/37134-h/37134-h.htm" target="_blank" rel="noopener noreferrer">The Elements of Style (William Strunk Jr. &amp; E.B. White)</a> - free, public-domain, and still the fastest way to tighten up grammar and usage habits, though modern stylists debate some of its stricter rules.</p>
+<p><a href="https://books.google.com/books?isbn=9780544611610" target="_blank" rel="noopener noreferrer">Steering the Craft (Ursula K. Le Guin)</a> - a paid title with no adequate free substitute; picks up where Elements of Style leaves off, moving from grammar rules into narrative-craft exercises on rhythm, point of view, and voice.</p>
+<p><a href="https://www.coursera.org/learn/craft-of-style" target="_blank" rel="noopener noreferrer">Creative Writing: The Craft of Style (Wesleyan University, Coursera)</a> - free to audit; a short video course covering the same sentence-craft territory in a more hands-on, peer-reviewed format, useful alongside either book.</p>
+<h3 id="reading-and-literary-analysis">Reading and Literary Analysis</h3>
+<p>Teaches close reading from a writer's perspective, reverse-engineering how published prose and poetry achieve their effects through word choice, point of view, and pacing.</p>
+<p><a href="https://books.google.com/books?isbn=9780060777050" target="_blank" rel="noopener noreferrer">Reading Like a Writer (Francine Prose)</a> - a full-length, example-rich study of technique across a wide range of canonical authors.</p>
+<p><a href="https://www.open.edu/openlearn/history-the-arts/creative-writing-and-critical-reading/content-section-0" target="_blank" rel="noopener noreferrer">Creative writing and critical reading (The Open University, OpenLearn)</a> - free and shorter than the book above; a good starting point if you want a quick entry before (or instead of) the fuller text.</p>
+<h3 id="introduction-to-creative-writing">Introduction to Creative Writing</h3>
+<p>Provides a structured, multi-genre first pass across fiction, poetry, and creative nonfiction (with brief exposure to dramatic writing) to build voice and establish a regular drafting habit before specializing.</p>
+<p><a href="https://books.google.com/books?isbn=9780134053240" target="_blank" rel="noopener noreferrer">Imaginative Writing: The Elements of Craft (Janet Burroway)</a> - the standard structured textbook for this survey, organized by craft element (image, voice, character, setting) before moving genre by genre.</p>
+<p><a href="https://books.google.com/books?isbn=9780385480017" target="_blank" rel="noopener noreferrer">Bird by Bird (Anne Lamott)</a> - not a technical textbook but a candid, funny companion on the psychology and daily practice of writing; read alongside Burroway rather than instead of it.</p>
+<p><a href="https://www.coursera.org/specializations/creative-writing" target="_blank" rel="noopener noreferrer">Creative Writing Specialization (Wesleyan University, Coursera)</a> - free to audit; covers similar multi-genre ground to the Burroway text through video lectures and peer workshops, so treat it as an alternative modality rather than an additional requirement.</p>
+<h3 id="fiction-writing">Fiction Writing</h3>
+<p>Covers narrative architecture, scene construction, character development, point of view, and dialogue for writing short stories and novel chapters.</p>
+<p><a href="https://books.google.com/books?isbn=9780226616698" target="_blank" rel="noopener noreferrer">Writing Fiction: A Guide to Narrative Craft (Janet Burroway, Elizabeth Stuckey-French, &amp; Ned Stuckey-French)</a> - the most widely used fiction-craft textbook in the US; comprehensive and example-driven.</p>
+<p><a href="https://books.google.com/books?isbn=9781439156810" target="_blank" rel="noopener noreferrer">On Writing: A Memoir of the Craft (Stephen King)</a> - part memoir, part practical advice; less systematic than Burroway but a good complement for its honesty about process and revision.</p>
+<p><a href="https://www.open.edu/openlearn/history-the-arts/creative-writing/start-writing-fiction/content-section-0" target="_blank" rel="noopener noreferrer">Start writing fiction (The Open University, OpenLearn)</a> - free and beginner-friendly; a gentle entry point if the Burroway textbook feels dense at first.</p>
+<p><a href="https://www.coursera.org/learn/craft-of-plot" target="_blank" rel="noopener noreferrer">Creative Writing: The Craft of Plot (Wesleyan University, Coursera)</a> - free to audit; a focused video treatment of plot structure specifically, useful as a companion to whichever book you choose.</p>
+<h3 id="poetry-writing">Poetry Writing</h3>
+<p>Focuses on lineation, meter, sound devices, imagery, and both closed and open poetic forms.</p>
+<p><a href="https://books.google.com/books?isbn=9780393316544" target="_blank" rel="noopener noreferrer">The Poet's Companion: A Guide to the Pleasures of Writing Poetry (Kim Addonizio &amp; Dorianne Laux)</a> - organized as weekly generative exercises; best if you want a steady practice routine.</p>
+<p><a href="https://books.google.com/books?isbn=9780156724005" target="_blank" rel="noopener noreferrer">A Poetry Handbook (Mary Oliver)</a> - shorter and more concise than the Addonizio/Laux text, with a sharper focus on the formal mechanics of meter and sound; a good complement rather than a substitute.</p>
+<p><a href="https://www.coursera.org/learn/poetry-workshop" target="_blank" rel="noopener noreferrer">Sharpened Visions: A Poetry Workshop (California Institute of the Arts, Coursera)</a> - free to audit; a generative video workshop that pairs well with either book above.</p>
+<h3 id="creative-nonfiction-writing">Creative Nonfiction Writing</h3>
+<p>Covers memoir, personal essay, lyric essay, and literary journalism, blending factual truth, subjective memory, and narrative craft.</p>
+<p><a href="https://books.google.com/books?isbn=9781260454604" target="_blank" rel="noopener noreferrer">Tell It Slant: Creating, Refining, and Publishing Creative Nonfiction (Brenda Miller &amp; Suzanne Paola)</a> - the standard comprehensive textbook and anthology for this genre.</p>
+<p><a href="https://www.open.edu/openlearn/history-the-arts/creative-writing/writing-what-you-know/content-section-0" target="_blank" rel="noopener noreferrer">Writing what you know (The Open University, OpenLearn)</a> - free and considerably shorter; a good low-commitment starting point before the fuller textbook, or a standalone option if cost is a barrier.</p>
+<h3 id="editing-and-revision">Editing and Revision</h3>
+<p>Develops systematic self-editing technique across developmental structure, scene mechanics, and line-level prose polish, to be applied continuously while drafting.</p>
+<p><a href="https://books.google.com/books?isbn=9780060545697" target="_blank" rel="noopener noreferrer">Self-Editing for Fiction Writers: How to Edit Yourself Into Print (Renni Browne &amp; Dave King)</a> - the classic line- and scene-level self-editing guide, written by two professional editors.</p>
+<p><a href="https://books.google.com/books?isbn=9781641293419" target="_blank" rel="noopener noreferrer">Refuse to Be Done: How to Write and Rewrite a Novel in Three Drafts (Matt Bell)</a> - a newer, more structural companion focused on big-picture drafting and rewriting across three full passes, rather than sentence-level polish; the two books address different scales of revision and work well together.</p>
+<p>Reedsy Learning's free editing courses (search "Novel Revision: Understanding the Craft" by Gotham Writers Workshop, or browse the full list at <a href="https://blog.reedsy.com/learning/courses/editing" target="_blank" rel="noopener noreferrer">reedsy.com/learning</a>) - free 10-day email courses specifically on fiction revision; a no-cost option if you'd rather not buy either book above, or a practical refresher alongside them.</p>
+    </article>
+  </main>
 
 </body>
 </html>
