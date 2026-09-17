@@ -45,7 +45,9 @@ What's here is deliberately limited to what every creative writer needs regardle
     - [Insecure Writer’s Support Group](https://www.insecurewriterssupportgroup.com/)
 - You can interact through [GitHub issues](https://github.com/hocbigg/creative-writing/issues). If there is a problem with a course, or a change needs to be made to the curriculum, this is the place to start the conversation. Read more [here](/CONTRIBUTING.html).
 
-## Curriculum
+## Foundations of Craft
+
+This phase builds the habits every creative writer needs before specializing: control over sentence-level prose, the ability to read published work analytically for technique, and a first hands-on tour across the major genres. Complete this phase before moving into genre-specific workshops.
 
 ### Fundamentals of Writing
 
@@ -74,6 +76,10 @@ Provides a structured, multi-genre first pass across fiction, poetry, and creati
 [Bird by Bird (Anne Lamott)](https://books.google.com/books?isbn=9780385480017) - not a technical textbook but a candid, funny companion on the psychology and daily practice of writing; read alongside Burroway rather than instead of it.
 
 [Creative Writing Specialization (Wesleyan University, Coursera)](https://www.coursera.org/specializations/creative-writing) - free to audit; covers similar multi-genre ground to the Burroway text through video lectures and peer workshops, so treat it as an alternative modality rather than an additional requirement.
+
+## Genre Workshops and Revision
+
+This phase is the heart of an undergraduate creative writing core: dedicated workshops in the three genres every beginning writer should practice, plus systematic revision technique. Fiction and Poetry can be studied concurrently, since both build essential narrative and figurative skills; Creative Nonfiction can follow immediately after or run in parallel. Editing and Revision should be applied continuously to whatever you're drafting in the other three subjects, not treated as a separate later stage.
 
 ### Fiction Writing
 
